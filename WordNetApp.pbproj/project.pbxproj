@@ -495,7 +495,7 @@
 				CURRENT_PROJECT_VERSION = 3;
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
 				OPTIMIZATION_CFLAGS = "";
 				OTHER_CFLAGS = "-DUNIX -Dunix";
@@ -514,7 +514,7 @@
 			);
 			isa = PBXApplicationTarget;
 			name = "WordNet (Application)";
-			productInstallPath = "$(LOCAL_APPS_DIR)";
+			productInstallPath = "$(HOME)/Applications";
 			productName = WordNet;
 			productReference = 014A846B0015FFB1C347C60C;
 			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
@@ -656,7 +656,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -666,7 +665,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -676,7 +674,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -686,7 +683,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -702,7 +698,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -712,7 +707,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -722,7 +716,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -732,7 +725,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -742,7 +734,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};
@@ -752,7 +743,6 @@
 			isa = PBXBuildFile;
 			settings = {
 				ATTRIBUTES = (
-					Public,
 					Project,
 				);
 			};

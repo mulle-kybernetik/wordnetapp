@@ -1,7 +1,7 @@
 {
     NSInfoPlistVersion = "5.0";
 	NSAppVersion = "Mac OS X Server Front End";
-    NSHumanReadableShortName = "WordNet";
+    NSHumanReadableShortName = "WordNet App";
     NSHumanReadableCopyright = "For copyright details refer to GNU Public License Version 2 and WordNet License";
 
 	NSServices = (
