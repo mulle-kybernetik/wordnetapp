@@ -2,8 +2,8 @@
 //	WNResult.m created by erik on Thu 18-Feb-1999
 //	This code is part of the WordNet frontend by Erik Doernenburg. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
-//	More information can be found at <http://www.erik.clara.net>.
-//	@(#)$Id: WNResult.m,v 1.1.1.1 2000-10-23 23:57:02 erik Exp $
+//	More information can be found at http://www.mulle-kybernetik.com/software/WordNet/.
+//	@(#)$Id: WNResult.m,v 1.2 2003-11-03 12:42:03 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <Foundation/Foundation.h>

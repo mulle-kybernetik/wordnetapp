@@ -2,8 +2,8 @@
 //	WNSearchWindowController.m created by erik on Fri 18-Sep-1998
 //	This code is part of the WordNet frontend by Erik Doernenburg. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
-//	More information can be found at <http://www.erik.clara.net>.
-//	@(#)$Id: WNSearchWindowController.m,v 1.4 2001-05-09 16:30:41 znek Exp $
+//	More information can be found at http://www.mulle-kybernetik.com/software/WordNet/.
+//	@(#)$Id: WNSearchWindowController.m,v 1.5 2003-11-03 12:42:03 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <AppKit/AppKit.h>
@@ -170,8 +170,10 @@
             [item setEnabled:YES];
             [item setRepresentedObject:result];
             }
+#if DEBUG
         else
             NSLog(@"warning. no popup item for '%@' %@/%@.", [result word], [result pos], [result type]);
+#endif
         }
     
     [self _setOutputText:overviews];
@@ -197,6 +199,7 @@
 
 - (void)_setOutputText:(NSString *)text
 {
+    static NSFont *font = nil;
     NSMutableAttributedString	*buffer;
     NSMutableDictionary			*fontAttr;
     NSMutableParagraphStyle		*lineStyle;
@@ -206,8 +209,11 @@
     NSScanner					*scanner;
     int							prefixLength;
 
+    if(font == nil)
+        font = [[NSFont systemFontOfSize:[NSFont smallSystemFontSize]] retain];
+
     buffer = [[[NSMutableAttributedString alloc] initWithString:@""] autorelease];
-    fontAttr = [NSDictionary dictionaryWithObject:[textView font] forKey:NSFontAttributeName];
+    fontAttr = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
     newlineString = [[[NSAttributedString alloc] initWithString:@"\n"] autorelease];
 
     lineEnum = [[text componentsSeparatedByString:@"\n"] objectEnumerator];
