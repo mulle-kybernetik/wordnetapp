@@ -32,6 +32,7 @@
 		};
 		014A84150015FFB1C347C60C = {
 			children = (
+				AD9664360556D2880053A744,
 				014A841C0015FFB1C347C60C,
 				014A84160015FFB1C347C60C,
 				014A84230015FFB1C347C60C,
@@ -274,8 +275,7 @@
 				01C8FAE10065242C7F000001,
 				014A84310015FFB1C347C60C,
 				014A843D0015FFB1C347C60C,
-				AD9662FD0556A2970053A744,
-				AD22201605566A90004AB04E,
+				AD9663210556AB370053A744,
 				014A84330015FFB1C347C60C,
 				014A84340015FFB1C347C60C,
 			);
@@ -286,7 +286,7 @@
 		};
 		014A84330015FFB1C347C60C = {
 			expectedFileType = text.plist;
-			fileEncoding = 30;
+			fileEncoding = 7;
 			isa = PBXFileReference;
 			path = FactoryDefaults.plist;
 			refType = 4;
@@ -635,6 +635,9 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				UNSTRIPPED_PRODUCT = NO;
 				ZERO_LINK = NO;
 			};
 			isa = PBXBuildStyle;
@@ -661,13 +664,13 @@
 			buildRules = (
 			);
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = "UNIX unix";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "WordNetInfo-MacOSX.plist";
+				INFOPLIST_FILE = "WordNetInfo-macos.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
@@ -1096,13 +1099,6 @@
 			isa = PBXRezBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD22201605566A90004AB04E = {
-			expectedFileType = text.plist;
-			isa = PBXFileReference;
-			path = "WordNetInfo-MacOSX.plist";
-			refType = 4;
-			sourceTree = "<group>";
-		};
 		AD22201705566A91004AB04E = {
 			expectedFileType = wrapper.application;
 			includeInIndex = 0;
@@ -1111,10 +1107,47 @@
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AD9662FD0556A2970053A744 = {
+		AD96631C0556AA7F0053A744 = {
+			expectedFileType = text.plist;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = Global;
+			path = WordNetInfo.plist;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		AD9663210556AB370053A744 = {
+			children = (
+				AD96631C0556AA7F0053A744,
+				AD9663220556AB370053A744,
+			);
+			isa = PBXVariantGroup;
+			name = WordNetInfo.plist;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		AD9663220556AB370053A744 = {
 			expectedFileType = text.plist;
 			isa = PBXFileReference;
-			path = "Info-WordNet.plist";
+			name = "Global - macos";
+			path = "WordNetInfo-macos.plist";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		AD9664350556D27D0053A744 = {
+			expectedFileType = text.rtf;
+			isa = PBXFileReference;
+			name = README.rtf;
+			path = "/var/automount/Network/Users/znek/Projects/mulle-private-cvs/WordNetApp/README.rtf";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		AD9664360556D2880053A744 = {
+			children = (
+				AD9664350556D27D0053A744,
+			);
+			isa = PBXGroup;
+			name = README;
 			refType = 4;
 			sourceTree = "<group>";
 		};

@@ -3,7 +3,7 @@
 //	This code is part of the WordNet frontend by Erik Doernenburg. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
 //	More information can be found at http://www.mulle-kybernetik.com/software/WordNet/.
-//	@(#)$Id: WNSearchWindowController.m,v 1.5 2003-11-03 12:42:03 znek Exp $
+//	@(#)$Id: WNSearchWindowController.m,v 1.6 2003-11-04 02:45:31 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <AppKit/AppKit.h>
@@ -77,9 +77,10 @@
         [popUpTitles setObject:titles forKey:wordType];
         }
     
+    [(NSSearchFieldCell *)[inputField cell] setMaximumRecents:20];
+
     [[self window] setFrameUsingName:@"SearchWindow"];
     [[self window] setFrameAutosaveName:@"SearchWindow"];
-    [inputField setCompletes:YES];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDoubleClickNotification:) name:WNTextViewDoubleClickNotification object:textView];
 }
 
@@ -111,7 +112,7 @@
 
 - (IBAction)runSearch:(id)sender
 {
-    NSArray				*resultSet;
+    NSArray				*resultSet = nil;
     NSMutableDictionary	*resultWords;
     NSEnumerator		*popUpButtonEnum;
     NSPopUpButton		*popUpButton;
@@ -123,11 +124,21 @@
     id <NSMenuItem>		item;
     int					itemIndex;
 
-    word = [inputField stringValue];
+    word = [[inputField stringValue] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
-    resultSet = [wnController runSearchForWord:word];
-    if([resultSet count] == 0)
+    if([word isEqualToString:@""] == NO)
+        resultSet = [wnController runSearchForWord:word];
+    if(resultSet == nil || [resultSet count] == 0)
         {
+        [nounPopUp setEnabled:NO];
+        [verbPopUp setEnabled:NO];
+        [adjPopUp setEnabled:NO];
+        [advPopUp setEnabled:NO];
+        [textView setString:@""];
+
+        [inputField selectText:self];
+        [[self window] makeFirstResponder:inputField];
+
         NSBeep();
         return;
         }
@@ -178,13 +189,8 @@
     
     [self _setOutputText:overviews];
 
-    [inputField removeItemWithObjectValue:word];
-    while([[inputField objectValues] count] > 20)
-        [inputField removeItemAtIndex:[[inputField objectValues] count] - 1];
-    [inputField insertItemWithObjectValue:word atIndex:0];
-    [inputField selectItemAtIndex:0];
-
-    [[self window] makeFirstResponder:[[self window] initialFirstResponder]];
+    [inputField selectText:self];
+    [[self window] makeFirstResponder:inputField];
 }
 
 
@@ -428,8 +434,11 @@
 
 - (void)textViewDoubleClickNotification:(NSNotification *)notification
 {
-    [inputField setStringValue:[[notification userInfo] objectForKey:@"selection"]];
-    [[inputField target] performSelector:[inputField action] withObject:inputField];
+    NSString *searchString;
+
+    searchString = [[[notification userInfo] objectForKey:@"selection"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    [inputField setStringValue:searchString];
+    [inputField performClick:self];
 }
 
 
@@ -447,9 +456,12 @@
         *error = NSLocalizedString(@"No text provided.", "");
         return;
         }
+    [NSApp activateIgnoringOtherApps:YES];
     [self showWindow:self];
+    string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
     [inputField setStringValue:string];
-    [[inputField target] performSelector:[inputField action] withObject:inputField];
+    [inputField performClick:self];
 }
 
 

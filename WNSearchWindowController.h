@@ -3,7 +3,7 @@
 //	This code is part of the WordNet frontend by Erik Doernenburg. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
 //	More information can be found at http://www.mulle-kybernetik.com/software/WordNet/.
-//	@(#)$Id: WNSearchWindowController.h,v 1.3 2003-11-03 12:42:03 znek Exp $
+//	@(#)$Id: WNSearchWindowController.h,v 1.4 2003-11-04 02:45:31 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <AppKit/AppKit.h>
@@ -17,7 +17,7 @@
     NSMutableDictionary		*popUpButtons;
     NSMutableDictionary		*popUpTitles;
 
-    IBOutlet NSComboBox		*inputField;
+    IBOutlet NSSearchField      *inputField;
     IBOutlet NSPopUpButton	*nounPopUp;
     IBOutlet NSPopUpButton	*verbPopUp;
     IBOutlet NSPopUpButton	*adjPopUp;
