@@ -3,7 +3,7 @@
 //	This code is part of the WordNet frontend by Erik Doernenburg. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
 //	More information can be found at <http://www.erik.clara.net>.
-//	@(#)$Id: WNAppController.m,v 1.1.1.1 2000-10-23 23:57:01 erik Exp $
+//	@(#)$Id: WNAppController.m,v 1.2 2001-03-14 22:47:16 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <AppKit/AppKit.h>
@@ -63,7 +63,8 @@
 
 - (void)showAboutPanel:(id)sender
 {
-    extern double	WordNetVersionNumber;
+//    extern double	WordNetVersionNumber;
+    double WordNetVersionNumber = 4;
     NSDictionary 	*options;
 
     options = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%g", WordNetVersionNumber] forKey:@"Version"];

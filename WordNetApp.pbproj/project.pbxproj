@@ -1,0 +1,1162 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 32;
+	objects = {
+		014A84140015FFB1C347C60C = {
+			buildStyles = (
+				1E17A200005EA4A3C347C60C,
+				1E17A201005EA4A3C347C60C,
+			);
+			isa = PBXProject;
+			mainGroup = 014A84150015FFB1C347C60C;
+			productRefGroup = 014A846A0015FFB1C347C60C;
+			projectDirPath = .;
+			targets = (
+				014A846C0015FFB1C347C60C,
+			);
+		};
+		014A84150015FFB1C347C60C = {
+			children = (
+				014A84160015FFB1C347C60C,
+				014A841C0015FFB1C347C60C,
+				014A84230015FFB1C347C60C,
+				014A84260015FFB1C347C60C,
+				014A84300015FFB1C347C60C,
+				014A84320015FFB1C347C60C,
+				014A84360015FFB1C347C60C,
+				014A843E0015FFB1C347C60C,
+				014A84650015FFB1C347C60C,
+				014A84690015FFB1C347C60C,
+				014A846A0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = WordNet;
+			refType = 4;
+		};
+		014A84160015FFB1C347C60C = {
+			children = (
+				014A84170015FFB1C347C60C,
+				014A84180015FFB1C347C60C,
+				014A84190015FFB1C347C60C,
+				014A841A0015FFB1C347C60C,
+				014A841B0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Classes;
+			refType = 4;
+		};
+		014A84170015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = EDApplication.m;
+			refType = 4;
+		};
+		014A84180015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNAppController.m;
+			refType = 4;
+		};
+		014A84190015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNSearchWindowController.m;
+			refType = 4;
+		};
+		014A841A0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNPrefPanelController.m;
+			refType = 4;
+		};
+		014A841B0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNTextView.m;
+			refType = 4;
+		};
+		014A841C0015FFB1C347C60C = {
+			children = (
+				014A841D0015FFB1C347C60C,
+				014A841E0015FFB1C347C60C,
+				014A841F0015FFB1C347C60C,
+				014A84200015FFB1C347C60C,
+				014A84210015FFB1C347C60C,
+				014A84220015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Headers;
+			refType = 4;
+		};
+		014A841D0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = EDApplication.h;
+			refType = 4;
+		};
+		014A841E0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Constants.h;
+			refType = 4;
+		};
+		014A841F0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNAppController.h;
+			refType = 4;
+		};
+		014A84200015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNSearchWindowController.h;
+			refType = 4;
+		};
+		014A84210015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNPrefPanelController.h;
+			refType = 4;
+		};
+		014A84220015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNTextView.h;
+			refType = 4;
+		};
+		014A84230015FFB1C347C60C = {
+			children = (
+				014A84240015FFB1C347C60C,
+				014A84250015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = "Other Sources";
+			refType = 4;
+		};
+		014A84240015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WordNet_main.m;
+			refType = 4;
+		};
+		014A84250015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Constants.m;
+			refType = 4;
+		};
+		014A84260015FFB1C347C60C = {
+			children = (
+				014A84270015FFB1C347C60C,
+				014A84290015FFB1C347C60C,
+				014A842B0015FFB1C347C60C,
+				014A842E0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Interfaces;
+			refType = 4;
+		};
+		014A84270015FFB1C347C60C = {
+			children = (
+				014A84280015FFB1C347C60C,
+				1E17A202005EA717C347C60C,
+			);
+			isa = PBXVariantGroup;
+			name = Preferences.nib;
+			refType = 4;
+		};
+		014A84280015FFB1C347C60C = {
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/Preferences.nib;
+			refType = 4;
+		};
+		014A84290015FFB1C347C60C = {
+			children = (
+				014A842A0015FFB1C347C60C,
+				1E17A203005EA7CDC347C60C,
+			);
+			isa = PBXVariantGroup;
+			name = SearchWindow.nib;
+			refType = 4;
+		};
+		014A842A0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/SearchWindow.nib;
+			refType = 4;
+		};
+		014A842B0015FFB1C347C60C = {
+			children = (
+				014A842C0015FFB1C347C60C,
+				014A842D0015FFB1C347C60C,
+				1E17A1FF005EA4A3C347C60C,
+			);
+			isa = PBXVariantGroup;
+			name = WordNet.nib;
+			refType = 4;
+		};
+		014A842C0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/WordNet.nib;
+			refType = 4;
+		};
+		014A842D0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			name = "English - windows";
+			path = "English.lproj/WordNet-windows.nib";
+			refType = 4;
+		};
+		014A842E0015FFB1C347C60C = {
+			children = (
+				014A842F0015FFB1C347C60C,
+			);
+			isa = PBXVariantGroup;
+			name = License.nib;
+			refType = 4;
+		};
+		014A842F0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/License.nib;
+			refType = 4;
+		};
+		014A84300015FFB1C347C60C = {
+			children = (
+				014A84310015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Images;
+			refType = 4;
+		};
+		014A84310015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WordNet.tiff;
+			refType = 4;
+		};
+		014A84320015FFB1C347C60C = {
+			children = (
+				014A84330015FFB1C347C60C,
+				014A84340015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+		};
+		014A84330015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = FactoryDefaults.plist;
+			refType = 4;
+		};
+		014A84340015FFB1C347C60C = {
+			children = (
+				014A84350015FFB1C347C60C,
+			);
+			isa = PBXVariantGroup;
+			name = Credits.rtf;
+			refType = 4;
+		};
+		014A84350015FFB1C347C60C = {
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/Credits.rtf;
+			refType = 4;
+		};
+		014A84360015FFB1C347C60C = {
+			children = (
+				014A84370015FFB1C347C60C,
+				014A84380015FFB1C347C60C,
+				014A84390015FFB1C347C60C,
+				014A843A0015FFB1C347C60C,
+				014A843B0015FFB1C347C60C,
+				014A843C0015FFB1C347C60C,
+				014A843D0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = "Supporting Files";
+			refType = 4;
+		};
+		014A84370015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile.preamble;
+			refType = 4;
+		};
+		014A84380015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile;
+			refType = 4;
+		};
+		014A84390015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile.postamble;
+			refType = 4;
+		};
+		014A843A0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = m.template;
+			refType = 4;
+		};
+		014A843B0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = h.template;
+			refType = 4;
+		};
+		014A843C0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = java.template;
+			refType = 4;
+		};
+		014A843D0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = CustomInfo.plist;
+			refType = 4;
+		};
+		014A843E0015FFB1C347C60C = {
+			children = (
+				014A843F0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Subprojects;
+			refType = 4;
+		};
+		014A843F0015FFB1C347C60C = {
+			children = (
+				014A84400015FFB1C347C60C,
+				014A84430015FFB1C347C60C,
+				014A84470015FFB1C347C60C,
+				014A84490015FFB1C347C60C,
+				014A844D0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = WordNetAccess;
+			path = WordNetAccess.subproj;
+			refType = 4;
+		};
+		014A84400015FFB1C347C60C = {
+			children = (
+				014A84410015FFB1C347C60C,
+				014A84420015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Classes;
+			refType = 4;
+		};
+		014A84410015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNController.m;
+			refType = 4;
+		};
+		014A84420015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNResult.m;
+			refType = 4;
+		};
+		014A84430015FFB1C347C60C = {
+			children = (
+				014A84440015FFB1C347C60C,
+				014A84450015FFB1C347C60C,
+				014A84460015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Headers;
+			refType = 4;
+		};
+		014A84440015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WordNetAccess.h;
+			refType = 4;
+		};
+		014A84450015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNController.h;
+			refType = 4;
+		};
+		014A84460015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = WNResult.h;
+			refType = 4;
+		};
+		014A84470015FFB1C347C60C = {
+			children = (
+				014A84480015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+		};
+		014A84480015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = SearchTypes.strings;
+			refType = 4;
+		};
+		014A84490015FFB1C347C60C = {
+			children = (
+				014A844A0015FFB1C347C60C,
+				014A844B0015FFB1C347C60C,
+				014A844C0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = "Supporting Files";
+			refType = 4;
+		};
+		014A844A0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile.preamble;
+			refType = 4;
+		};
+		014A844B0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile;
+			refType = 4;
+		};
+		014A844C0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile.postamble;
+			refType = 4;
+		};
+		014A844D0015FFB1C347C60C = {
+			children = (
+				014A844E0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Subprojects;
+			refType = 4;
+		};
+		014A844E0015FFB1C347C60C = {
+			children = (
+				014A844F0015FFB1C347C60C,
+				014A84580015FFB1C347C60C,
+				014A84610015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = wnlib;
+			path = wnlib.subproj;
+			refType = 4;
+		};
+		014A844F0015FFB1C347C60C = {
+			children = (
+				014A84500015FFB1C347C60C,
+				014A84510015FFB1C347C60C,
+				014A84520015FFB1C347C60C,
+				014A84530015FFB1C347C60C,
+				014A84540015FFB1C347C60C,
+				014A84550015FFB1C347C60C,
+				014A84560015FFB1C347C60C,
+				014A84570015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Headers;
+			refType = 4;
+		};
+		014A84500015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = license.h;
+			refType = 4;
+		};
+		014A84510015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = setutil.h;
+			refType = 4;
+		};
+		014A84520015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wn.h;
+			refType = 4;
+		};
+		014A84530015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wnconsts.h;
+			refType = 4;
+		};
+		014A84540015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wnglobal.h;
+			refType = 4;
+		};
+		014A84550015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wnhelp.h;
+			refType = 4;
+		};
+		014A84560015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wnrtl.h;
+			refType = 4;
+		};
+		014A84570015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wntypes.h;
+			refType = 4;
+		};
+		014A84580015FFB1C347C60C = {
+			children = (
+				014A84590015FFB1C347C60C,
+				014A845A0015FFB1C347C60C,
+				014A845B0015FFB1C347C60C,
+				014A845C0015FFB1C347C60C,
+				014A845D0015FFB1C347C60C,
+				014A845E0015FFB1C347C60C,
+				014A845F0015FFB1C347C60C,
+				014A84600015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = "Other Sources";
+			refType = 4;
+		};
+		014A84590015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = binsrch.c;
+			refType = 4;
+		};
+		014A845A0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = morph.c;
+			refType = 4;
+		};
+		014A845B0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = search.c;
+			refType = 4;
+		};
+		014A845C0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = setutil.c;
+			refType = 4;
+		};
+		014A845D0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wnglobal.c;
+			refType = 4;
+		};
+		014A845E0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wnhelp.c;
+			refType = 4;
+		};
+		014A845F0015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wnrtl.c;
+			refType = 4;
+		};
+		014A84600015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = wnutil.c;
+			refType = 4;
+		};
+		014A84610015FFB1C347C60C = {
+			children = (
+				014A84620015FFB1C347C60C,
+				014A84630015FFB1C347C60C,
+				014A84640015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = "Supporting Files";
+			refType = 4;
+		};
+		014A84620015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile.preamble;
+			refType = 4;
+		};
+		014A84630015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile;
+			refType = 4;
+		};
+		014A84640015FFB1C347C60C = {
+			isa = PBXFileReference;
+			path = Makefile.postamble;
+			refType = 4;
+		};
+		014A84650015FFB1C347C60C = {
+			children = (
+				014A84670015FFB1C347C60C,
+				014A84680015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			refType = 4;
+		};
+		014A84670015FFB1C347C60C = {
+			isa = PBXFrameworkReference;
+			name = AppKit.framework;
+			path = /System/Library/Frameworks/AppKit.framework;
+			refType = 0;
+		};
+		014A84680015FFB1C347C60C = {
+			isa = PBXFrameworkReference;
+			name = Foundation.framework;
+			path = /System/Library/Frameworks/Foundation.framework;
+			refType = 0;
+		};
+		014A84690015FFB1C347C60C = {
+			isa = PBXFileReference;
+			name = "Import Log.rtf";
+			path = "/Network/Users/znek/Projects/mulle-private-cvs/WordNetApp/Import Log.rtf";
+			refType = 0;
+		};
+		014A846A0015FFB1C347C60C = {
+			children = (
+				014A846B0015FFB1C347C60C,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+		014A846B0015FFB1C347C60C = {
+			isa = PBXApplicationReference;
+			path = WordNet.app;
+			refType = 3;
+		};
+		014A846C0015FFB1C347C60C = {
+			buildPhases = (
+				014A846D0015FFB1C347C60C,
+				014A847F0015FFB1C347C60C,
+				014A84880015FFB1C347C60C,
+				014A849A0015FFB1C347C60C,
+				014A849E0015FFB1C347C60C,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "-DUNIX -Dunix";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = WordNet;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = app;
+			};
+			conditionalBuildSettings = {
+			};
+			dependencies = (
+			);
+			isa = PBXApplicationTarget;
+			name = "WordNet (Application)";
+			productInstallPath = "$(HOME)/Applications";
+			productName = WordNet;
+			productReference = 014A846B0015FFB1C347C60C;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist SYSTEM \"file://localhost/System/Library/DTDs/PropertyList.dtd\">
+<plist version=\"0.9\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>WordNet</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string>WordNet.tiff</string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string></string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1d1</string>
+	<key>NSAppVersion</key>
+	<string>Mac OS X Server Front End</string>
+	<key>NSExtensions</key>
+	<dict/>
+	<key>NSHumanReadableCopyright</key>
+	<string>For copyright details refer to GNU Public License Version 2 and WordNet License</string>
+	<key>NSHumanReadableShortName</key>
+	<string>WordNet</string>
+	<key>NSInfoPlistVersion</key>
+	<string>5.0</string>
+	<key>NSMainNibFile</key>
+	<string>WordNet.nib</string>
+	<key>NSPrincipalClass</key>
+	<string>EDApplication</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSExecutable</key>
+			<string>WordNet</string>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>=</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>English</key>
+				<string>Search in WordNet</string>
+				<key>German</key>
+				<string>In WordNet suchen</string>
+				<key>default</key>
+				<string>Search in WordNet</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>provideLookupService</string>
+			<key>NSPortName</key>
+			<string>WordNet</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
+";
+			shouldUseHeadermap = 0;
+		};
+		014A846D0015FFB1C347C60C = {
+			buildActionMask = 2147483647;
+			files = (
+				014A846E0015FFB1C347C60C,
+				014A846F0015FFB1C347C60C,
+				014A84700015FFB1C347C60C,
+				014A84710015FFB1C347C60C,
+				014A84720015FFB1C347C60C,
+				014A84730015FFB1C347C60C,
+				014A84740015FFB1C347C60C,
+				014A84750015FFB1C347C60C,
+				014A84760015FFB1C347C60C,
+				014A84770015FFB1C347C60C,
+				014A84780015FFB1C347C60C,
+				014A84790015FFB1C347C60C,
+				014A847A0015FFB1C347C60C,
+				014A847B0015FFB1C347C60C,
+				014A847C0015FFB1C347C60C,
+				014A847D0015FFB1C347C60C,
+				014A847E0015FFB1C347C60C,
+			);
+			isa = PBXHeadersBuildPhase;
+			name = Headers;
+		};
+		014A846E0015FFB1C347C60C = {
+			fileRef = 014A841D0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A846F0015FFB1C347C60C = {
+			fileRef = 014A841E0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84700015FFB1C347C60C = {
+			fileRef = 014A841F0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84710015FFB1C347C60C = {
+			fileRef = 014A84200015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84720015FFB1C347C60C = {
+			fileRef = 014A84210015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84730015FFB1C347C60C = {
+			fileRef = 014A84220015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84740015FFB1C347C60C = {
+			fileRef = 014A84440015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A84750015FFB1C347C60C = {
+			fileRef = 014A84450015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A84760015FFB1C347C60C = {
+			fileRef = 014A84460015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A84770015FFB1C347C60C = {
+			fileRef = 014A84500015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A84780015FFB1C347C60C = {
+			fileRef = 014A84510015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84790015FFB1C347C60C = {
+			fileRef = 014A84520015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A847A0015FFB1C347C60C = {
+			fileRef = 014A84530015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A847B0015FFB1C347C60C = {
+			fileRef = 014A84540015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A847C0015FFB1C347C60C = {
+			fileRef = 014A84550015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A847D0015FFB1C347C60C = {
+			fileRef = 014A84560015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A847E0015FFB1C347C60C = {
+			fileRef = 014A84570015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+					Project,
+				);
+			};
+		};
+		014A847F0015FFB1C347C60C = {
+			buildActionMask = 2147483647;
+			files = (
+				014A84800015FFB1C347C60C,
+				014A84810015FFB1C347C60C,
+				014A84820015FFB1C347C60C,
+				014A84830015FFB1C347C60C,
+				014A84840015FFB1C347C60C,
+				014A84850015FFB1C347C60C,
+				014A84860015FFB1C347C60C,
+				014A84870015FFB1C347C60C,
+			);
+			isa = PBXResourcesBuildPhase;
+			name = "Bundle Resources";
+		};
+		014A84800015FFB1C347C60C = {
+			fileRef = 014A84270015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84810015FFB1C347C60C = {
+			fileRef = 014A84290015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84820015FFB1C347C60C = {
+			fileRef = 014A842B0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84830015FFB1C347C60C = {
+			fileRef = 014A842E0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84840015FFB1C347C60C = {
+			fileRef = 014A84310015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84850015FFB1C347C60C = {
+			fileRef = 014A84330015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84860015FFB1C347C60C = {
+			fileRef = 014A84340015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84870015FFB1C347C60C = {
+			fileRef = 014A84480015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A84880015FFB1C347C60C = {
+			buildActionMask = 2147483647;
+			files = (
+				014A84890015FFB1C347C60C,
+				014A848A0015FFB1C347C60C,
+				014A848B0015FFB1C347C60C,
+				014A848C0015FFB1C347C60C,
+				014A848D0015FFB1C347C60C,
+				014A848E0015FFB1C347C60C,
+				014A848F0015FFB1C347C60C,
+				014A84900015FFB1C347C60C,
+				014A84910015FFB1C347C60C,
+				014A84920015FFB1C347C60C,
+				014A84930015FFB1C347C60C,
+				014A84940015FFB1C347C60C,
+				014A84950015FFB1C347C60C,
+				014A84960015FFB1C347C60C,
+				014A84970015FFB1C347C60C,
+				014A84980015FFB1C347C60C,
+				014A84990015FFB1C347C60C,
+			);
+			isa = PBXSourcesBuildPhase;
+			name = Sources;
+		};
+		014A84890015FFB1C347C60C = {
+			fileRef = 014A84170015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A848A0015FFB1C347C60C = {
+			fileRef = 014A84180015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A848B0015FFB1C347C60C = {
+			fileRef = 014A84190015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A848C0015FFB1C347C60C = {
+			fileRef = 014A841A0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A848D0015FFB1C347C60C = {
+			fileRef = 014A841B0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A848E0015FFB1C347C60C = {
+			fileRef = 014A84240015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A848F0015FFB1C347C60C = {
+			fileRef = 014A84250015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84900015FFB1C347C60C = {
+			fileRef = 014A84410015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84910015FFB1C347C60C = {
+			fileRef = 014A84420015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84920015FFB1C347C60C = {
+			fileRef = 014A84590015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84930015FFB1C347C60C = {
+			fileRef = 014A845A0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84940015FFB1C347C60C = {
+			fileRef = 014A845B0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84950015FFB1C347C60C = {
+			fileRef = 014A845C0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84960015FFB1C347C60C = {
+			fileRef = 014A845D0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84970015FFB1C347C60C = {
+			fileRef = 014A845E0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84980015FFB1C347C60C = {
+			fileRef = 014A845F0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A84990015FFB1C347C60C = {
+			fileRef = 014A84600015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		014A849A0015FFB1C347C60C = {
+			buildActionMask = 2147483647;
+			files = (
+				014A849C0015FFB1C347C60C,
+				014A849D0015FFB1C347C60C,
+			);
+			isa = PBXFrameworksBuildPhase;
+			name = "Frameworks & Libraries";
+		};
+		014A849C0015FFB1C347C60C = {
+			fileRef = 014A84670015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A849D0015FFB1C347C60C = {
+			fileRef = 014A84680015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		014A849E0015FFB1C347C60C = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			name = "ResourceManager Resources";
+		};
+		1E17A1FF005EA4A3C347C60C = {
+			isa = PBXFileReference;
+			name = "English - macos";
+			path = "English.lproj/WordNet-macos.nib";
+			refType = 4;
+		};
+		1E17A200005EA4A3C347C60C = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		1E17A201005EA4A3C347C60C = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		1E17A202005EA717C347C60C = {
+			isa = PBXFileReference;
+			name = "English - macos";
+			path = "English.lproj/Preferences-macos.nib";
+			refType = 4;
+		};
+		1E17A203005EA7CDC347C60C = {
+			isa = PBXFileReference;
+			name = "English - macos";
+			path = "English.lproj/SearchWindow-macos.nib";
+			refType = 4;
+		};
+	};
+	rootObject = 014A84140015FFB1C347C60C;
+}
