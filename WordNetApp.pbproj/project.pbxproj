@@ -3,37 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 32;
+	objectVersion = 39;
 	objects = {
 		0149F9C0007407687F000001 = {
+			expectedFileType = wrapper.framework;
+			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
 			name = Cocoa.framework;
 			path = /System/Library/Frameworks/Cocoa.framework;
 			refType = 0;
-		};
-		0149F9C1007407687F000001 = {
-			fileRef = 0149F9C0007407687F000001;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		0149F9C20074079A7F000001 = {
-			fileRef = 014A843D0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
+			sourceTree = "<absolute>";
 		};
 		014A84140015FFB1C347C60C = {
+			buildSettings = {
+			};
 			buildStyles = (
 				1E17A200005EA4A3C347C60C,
 				1E17A201005EA4A3C347C60C,
 			);
+			hasScannedForEncodings = 1;
 			isa = PBXProject;
 			mainGroup = 014A84150015FFB1C347C60C;
 			productRefGroup = 014A846A0015FFB1C347C60C;
-			projectDirPath = .;
+			projectDirPath = "";
 			targets = (
-				014A846C0015FFB1C347C60C,
+				AD221FE205566A90004AB04E,
 			);
 		};
 		014A84150015FFB1C347C60C = {
@@ -41,7 +35,7 @@
 				014A841C0015FFB1C347C60C,
 				014A84160015FFB1C347C60C,
 				014A84230015FFB1C347C60C,
-				014A843E0015FFB1C347C60C,
+				014A843F0015FFB1C347C60C,
 				014A84320015FFB1C347C60C,
 				014A84650015FFB1C347C60C,
 				014A846A0015FFB1C347C60C,
@@ -49,6 +43,7 @@
 			isa = PBXGroup;
 			name = WordNet;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84160015FFB1C347C60C = {
 			children = (
@@ -61,31 +56,47 @@
 			isa = PBXGroup;
 			name = Classes;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84170015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = EDApplication.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84180015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNAppController.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84190015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNSearchWindowController.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A841A0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNPrefPanelController.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A841B0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNTextView.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A841C0015FFB1C347C60C = {
 			children = (
@@ -99,36 +110,55 @@
 			isa = PBXGroup;
 			name = Headers;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A841D0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = EDApplication.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A841E0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = Constants.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A841F0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNAppController.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84200015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNSearchWindowController.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84210015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNPrefPanelController.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84220015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNTextView.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84230015FFB1C347C60C = {
 			children = (
@@ -138,16 +168,23 @@
 			isa = PBXGroup;
 			name = "Other Sources";
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84240015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WordNet_main.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84250015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = Constants.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84270015FFB1C347C60C = {
 			children = (
@@ -158,12 +195,15 @@
 			name = Preferences.nib;
 			path = "";
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84280015FFB1C347C60C = {
+			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
 			name = English;
 			path = English.lproj/Preferences.nib;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84290015FFB1C347C60C = {
 			children = (
@@ -174,12 +214,15 @@
 			name = SearchWindow.nib;
 			path = "";
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A842A0015FFB1C347C60C = {
+			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
 			name = English;
 			path = English.lproj/SearchWindow.nib;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A842B0015FFB1C347C60C = {
 			children = (
@@ -190,12 +233,15 @@
 			name = WordNet.nib;
 			path = "";
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A842C0015FFB1C347C60C = {
+			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
 			name = English;
 			path = English.lproj/WordNet.nib;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A842E0015FFB1C347C60C = {
 			children = (
@@ -205,17 +251,22 @@
 			name = License.nib;
 			path = "";
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A842F0015FFB1C347C60C = {
+			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
 			name = English;
 			path = English.lproj/License.nib;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84310015FFB1C347C60C = {
+			expectedFileType = image.tiff;
 			isa = PBXFileReference;
 			path = WordNet.tiff;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84320015FFB1C347C60C = {
 			children = (
@@ -226,17 +277,22 @@
 				01C8FAE10065242C7F000001,
 				014A84310015FFB1C347C60C,
 				014A843D0015FFB1C347C60C,
+				AD22201605566A90004AB04E,
 				014A84330015FFB1C347C60C,
 				014A84340015FFB1C347C60C,
 			);
 			isa = PBXGroup;
 			name = Resources;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84330015FFB1C347C60C = {
+			expectedFileType = text.plist;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = FactoryDefaults.plist;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84340015FFB1C347C60C = {
 			children = (
@@ -245,37 +301,36 @@
 			isa = PBXVariantGroup;
 			name = Credits.rtf;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84350015FFB1C347C60C = {
+			expectedFileType = text.rtf;
 			isa = PBXFileReference;
 			name = English;
 			path = English.lproj/Credits.rtf;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A843D0015FFB1C347C60C = {
+			expectedFileType = text.plist;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = CustomInfo.plist;
 			refType = 4;
-		};
-		014A843E0015FFB1C347C60C = {
-			children = (
-				014A843F0015FFB1C347C60C,
-			);
-			isa = PBXGroup;
-			name = Subprojects;
-			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A843F0015FFB1C347C60C = {
 			children = (
 				014A84430015FFB1C347C60C,
 				014A84400015FFB1C347C60C,
 				014A84470015FFB1C347C60C,
-				014A844D0015FFB1C347C60C,
+				014A844E0015FFB1C347C60C,
 			);
 			isa = PBXGroup;
 			name = WordNetAccess;
 			path = WordNetAccess.subproj;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84400015FFB1C347C60C = {
 			children = (
@@ -285,16 +340,23 @@
 			isa = PBXGroup;
 			name = Classes;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84410015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNController.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84420015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNResult.m;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84430015FFB1C347C60C = {
 			children = (
@@ -305,21 +367,31 @@
 			isa = PBXGroup;
 			name = Headers;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84440015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WordNetAccess.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84450015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNController.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84460015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = WNResult.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84470015FFB1C347C60C = {
 			children = (
@@ -328,19 +400,15 @@
 			isa = PBXGroup;
 			name = Resources;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84480015FFB1C347C60C = {
+			expectedFileType = text.plist.strings;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = SearchTypes.strings;
 			refType = 4;
-		};
-		014A844D0015FFB1C347C60C = {
-			children = (
-				014A844E0015FFB1C347C60C,
-			);
-			isa = PBXGroup;
-			name = Subprojects;
-			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A844E0015FFB1C347C60C = {
 			children = (
@@ -351,6 +419,7 @@
 			name = wnlib;
 			path = wnlib.subproj;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A844F0015FFB1C347C60C = {
 			children = (
@@ -366,46 +435,71 @@
 			isa = PBXGroup;
 			name = Headers;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84500015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = license.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84510015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = setutil.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84520015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wn.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84530015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wnconsts.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84540015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wnglobal.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84550015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wnhelp.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84560015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wnrtl.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84570015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wntypes.h;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84580015FFB1C347C60C = {
 			children = (
@@ -421,46 +515,71 @@
 			isa = PBXGroup;
 			name = "Other Sources";
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84590015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.c;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = binsrch.c;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A845A0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.c;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = morph.c;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A845B0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.c;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = search.c;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A845C0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.c;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = setutil.c;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A845D0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.c;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wnglobal.c;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A845E0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.c;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wnhelp.c;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A845F0015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.c;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wnrtl.c;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84600015FFB1C347C60C = {
+			expectedFileType = sourcecode.c.c;
+			fileEncoding = 30;
 			isa = PBXFileReference;
 			path = wnutil.c;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A84650015FFB1C347C60C = {
 			children = (
@@ -469,536 +588,53 @@
 			isa = PBXGroup;
 			name = Frameworks;
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		014A846A0015FFB1C347C60C = {
 			children = (
-				014A846B0015FFB1C347C60C,
+				AD22201705566A91004AB04E,
 			);
 			isa = PBXGroup;
 			name = Products;
 			refType = 4;
-		};
-		014A846B0015FFB1C347C60C = {
-			isa = PBXApplicationReference;
-			path = WordNet.app;
-			refType = 3;
-		};
-		014A846C0015FFB1C347C60C = {
-			buildPhases = (
-				014A846D0015FFB1C347C60C,
-				014A847F0015FFB1C347C60C,
-				014A84880015FFB1C347C60C,
-				014A849A0015FFB1C347C60C,
-				014A849E0015FFB1C347C60C,
-			);
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 4;
-				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "";
-				OTHER_CFLAGS = "-DUNIX -Dunix";
-				OTHER_GENERATED_OFILES = "$(VERS_OFILE)";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = WordNet;
-				SECTORDER_FLAGS = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
-				WRAPPER_EXTENSION = app;
-			};
-			conditionalBuildSettings = {
-			};
-			dependencies = (
-			);
-			isa = PBXApplicationTarget;
-			name = "WordNet (Application)";
-			productInstallPath = "$(HOME)/Applications";
-			productName = WordNet;
-			productReference = 014A846B0015FFB1C347C60C;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist SYSTEM \"file://localhost/System/Library/DTDs/PropertyList.dtd\">
-<plist version=\"0.9\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>WordNet</string>
-	<key>CFBundleGetInfoString</key>
-	<string>WordNet version 4, For copyright details refer to GNU Public License Version 2 and WordNet License.</string>
-	<key>CFBundleIconFile</key>
-	<string>WordNet</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.mulle-kybernetik.wordnet</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>WordNet</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>4</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>For copyright details refer to GNU Public License Version 2 and WordNet License</string>
-	<key>NSMainNibFile</key>
-	<string>WordNet.nib</string>
-	<key>NSPrincipalClass</key>
-	<string>EDApplication</string>
-	<key>NSServices</key>
-	<array>
-		<dict>
-			<key>NSExecutable</key>
-			<string>WordNet</string>
-			<key>NSKeyEquivalent</key>
-			<dict>
-				<key>default</key>
-				<string>=</string>
-			</dict>
-			<key>NSMenuItem</key>
-			<dict>
-				<key>English</key>
-				<string>Search in WordNet</string>
-				<key>German</key>
-				<string>In WordNet suchen</string>
-				<key>default</key>
-				<string>Search in WordNet</string>
-			</dict>
-			<key>NSMessage</key>
-			<string>provideLookupService</string>
-			<key>NSPortName</key>
-			<string>WordNet</string>
-			<key>NSSendTypes</key>
-			<array>
-				<string>NSStringPboardType</string>
-			</array>
-		</dict>
-	</array>
-</dict>
-</plist>
-";
-			shouldUseHeadermap = 0;
-		};
-		014A846D0015FFB1C347C60C = {
-			buildActionMask = 2147483647;
-			files = (
-				014A846E0015FFB1C347C60C,
-				014A846F0015FFB1C347C60C,
-				014A84700015FFB1C347C60C,
-				014A84710015FFB1C347C60C,
-				014A84720015FFB1C347C60C,
-				014A84730015FFB1C347C60C,
-				014A84740015FFB1C347C60C,
-				014A84750015FFB1C347C60C,
-				014A84760015FFB1C347C60C,
-				014A84770015FFB1C347C60C,
-				014A84780015FFB1C347C60C,
-				014A84790015FFB1C347C60C,
-				014A847A0015FFB1C347C60C,
-				014A847B0015FFB1C347C60C,
-				014A847C0015FFB1C347C60C,
-				014A847D0015FFB1C347C60C,
-				014A847E0015FFB1C347C60C,
-			);
-			isa = PBXHeadersBuildPhase;
-			name = Headers;
-		};
-		014A846E0015FFB1C347C60C = {
-			fileRef = 014A841D0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A846F0015FFB1C347C60C = {
-			fileRef = 014A841E0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84700015FFB1C347C60C = {
-			fileRef = 014A841F0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84710015FFB1C347C60C = {
-			fileRef = 014A84200015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84720015FFB1C347C60C = {
-			fileRef = 014A84210015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84730015FFB1C347C60C = {
-			fileRef = 014A84220015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84740015FFB1C347C60C = {
-			fileRef = 014A84440015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A84750015FFB1C347C60C = {
-			fileRef = 014A84450015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A84760015FFB1C347C60C = {
-			fileRef = 014A84460015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A84770015FFB1C347C60C = {
-			fileRef = 014A84500015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A84780015FFB1C347C60C = {
-			fileRef = 014A84510015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84790015FFB1C347C60C = {
-			fileRef = 014A84520015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A847A0015FFB1C347C60C = {
-			fileRef = 014A84530015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A847B0015FFB1C347C60C = {
-			fileRef = 014A84540015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A847C0015FFB1C347C60C = {
-			fileRef = 014A84550015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A847D0015FFB1C347C60C = {
-			fileRef = 014A84560015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A847E0015FFB1C347C60C = {
-			fileRef = 014A84570015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					Project,
-				);
-			};
-		};
-		014A847F0015FFB1C347C60C = {
-			buildActionMask = 2147483647;
-			files = (
-				014A84800015FFB1C347C60C,
-				014A84810015FFB1C347C60C,
-				014A84820015FFB1C347C60C,
-				014A84830015FFB1C347C60C,
-				014A84840015FFB1C347C60C,
-				014A84850015FFB1C347C60C,
-				014A84860015FFB1C347C60C,
-				014A84870015FFB1C347C60C,
-				01C8FAE20065242C7F000001,
-				0149F9C20074079A7F000001,
-			);
-			isa = PBXResourcesBuildPhase;
-			name = "Bundle Resources";
-		};
-		014A84800015FFB1C347C60C = {
-			fileRef = 014A84270015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84810015FFB1C347C60C = {
-			fileRef = 014A84290015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84820015FFB1C347C60C = {
-			fileRef = 014A842B0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84830015FFB1C347C60C = {
-			fileRef = 014A842E0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84840015FFB1C347C60C = {
-			fileRef = 014A84310015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84850015FFB1C347C60C = {
-			fileRef = 014A84330015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84860015FFB1C347C60C = {
-			fileRef = 014A84340015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84870015FFB1C347C60C = {
-			fileRef = 014A84480015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A84880015FFB1C347C60C = {
-			buildActionMask = 2147483647;
-			files = (
-				014A84890015FFB1C347C60C,
-				014A848A0015FFB1C347C60C,
-				014A848B0015FFB1C347C60C,
-				014A848C0015FFB1C347C60C,
-				014A848D0015FFB1C347C60C,
-				014A848E0015FFB1C347C60C,
-				014A848F0015FFB1C347C60C,
-				014A84900015FFB1C347C60C,
-				014A84910015FFB1C347C60C,
-				014A84920015FFB1C347C60C,
-				014A84930015FFB1C347C60C,
-				014A84940015FFB1C347C60C,
-				014A84950015FFB1C347C60C,
-				014A84960015FFB1C347C60C,
-				014A84970015FFB1C347C60C,
-				014A84980015FFB1C347C60C,
-				014A84990015FFB1C347C60C,
-			);
-			isa = PBXSourcesBuildPhase;
-			name = Sources;
-		};
-		014A84890015FFB1C347C60C = {
-			fileRef = 014A84170015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A848A0015FFB1C347C60C = {
-			fileRef = 014A84180015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A848B0015FFB1C347C60C = {
-			fileRef = 014A84190015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A848C0015FFB1C347C60C = {
-			fileRef = 014A841A0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A848D0015FFB1C347C60C = {
-			fileRef = 014A841B0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A848E0015FFB1C347C60C = {
-			fileRef = 014A84240015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A848F0015FFB1C347C60C = {
-			fileRef = 014A84250015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84900015FFB1C347C60C = {
-			fileRef = 014A84410015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84910015FFB1C347C60C = {
-			fileRef = 014A84420015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84920015FFB1C347C60C = {
-			fileRef = 014A84590015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84930015FFB1C347C60C = {
-			fileRef = 014A845A0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84940015FFB1C347C60C = {
-			fileRef = 014A845B0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84950015FFB1C347C60C = {
-			fileRef = 014A845C0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84960015FFB1C347C60C = {
-			fileRef = 014A845D0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84970015FFB1C347C60C = {
-			fileRef = 014A845E0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84980015FFB1C347C60C = {
-			fileRef = 014A845F0015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A84990015FFB1C347C60C = {
-			fileRef = 014A84600015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-				);
-			};
-		};
-		014A849A0015FFB1C347C60C = {
-			buildActionMask = 2147483647;
-			files = (
-				0149F9C1007407687F000001,
-			);
-			isa = PBXFrameworksBuildPhase;
-			name = "Frameworks & Libraries";
-		};
-		014A849E0015FFB1C347C60C = {
-			buildActionMask = 2147483647;
-			files = (
-			);
-			isa = PBXRezBuildPhase;
-			name = "ResourceManager Resources";
+			sourceTree = "<group>";
 		};
 		01C8FAE10065242C7F000001 = {
+			expectedFileType = image.icns;
 			isa = PBXFileReference;
 			path = WordNet.icns;
 			refType = 4;
+			sourceTree = "<group>";
 		};
-		01C8FAE20065242C7F000001 = {
-			fileRef = 01C8FAE10065242C7F000001;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
+//010
+//011
+//012
+//013
+//014
+//1E0
+//1E1
+//1E2
+//1E3
+//1E4
 		1E17A1FF005EA4A3C347C60C = {
+			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
 			name = "English - macos";
 			path = "English.lproj/WordNet-macos.nib";
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		1E17A200005EA4A3C347C60C = {
 			buildRules = (
 			);
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
 			};
 			isa = PBXBuildStyle;
 			name = Development;
@@ -1008,21 +644,498 @@
 			);
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
 			};
 			isa = PBXBuildStyle;
 			name = Deployment;
 		};
 		1E17A202005EA717C347C60C = {
+			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
 			name = "English - macos";
 			path = "English.lproj/Preferences-macos.nib";
 			refType = 4;
+			sourceTree = "<group>";
 		};
 		1E17A203005EA7CDC347C60C = {
+			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
 			name = "English - macos";
 			path = "English.lproj/SearchWindow-macos.nib";
 			refType = 4;
+			sourceTree = "<group>";
+		};
+//1E0
+//1E1
+//1E2
+//1E3
+//1E4
+//AD0
+//AD1
+//AD2
+//AD3
+//AD4
+		AD221FE205566A90004AB04E = {
+			buildPhases = (
+				AD221FE305566A90004AB04E,
+				AD221FF505566A90004AB04E,
+				AD22200005566A90004AB04E,
+				AD22201205566A90004AB04E,
+				AD22201405566A90004AB04E,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 4;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "UNIX unix";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-WordNet.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_GENERATED_OFILES = "$(VERS_OFILE)";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = WordNet;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = WordNet;
+			productInstallPath = "$(HOME)/Applications";
+			productName = WordNet;
+			productReference = AD22201705566A91004AB04E;
+			productType = "com.apple.product-type.application";
+		};
+		AD221FE305566A90004AB04E = {
+			buildActionMask = 2147483647;
+			files = (
+				AD221FE405566A90004AB04E,
+				AD221FE505566A90004AB04E,
+				AD221FE605566A90004AB04E,
+				AD221FE705566A90004AB04E,
+				AD221FE805566A90004AB04E,
+				AD221FE905566A90004AB04E,
+				AD221FEA05566A90004AB04E,
+				AD221FEB05566A90004AB04E,
+				AD221FEC05566A90004AB04E,
+				AD221FED05566A90004AB04E,
+				AD221FEE05566A90004AB04E,
+				AD221FEF05566A90004AB04E,
+				AD221FF005566A90004AB04E,
+				AD221FF105566A90004AB04E,
+				AD221FF205566A90004AB04E,
+				AD221FF305566A90004AB04E,
+				AD221FF405566A90004AB04E,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD221FE405566A90004AB04E = {
+			fileRef = 014A841D0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FE505566A90004AB04E = {
+			fileRef = 014A841E0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FE605566A90004AB04E = {
+			fileRef = 014A841F0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FE705566A90004AB04E = {
+			fileRef = 014A84200015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FE805566A90004AB04E = {
+			fileRef = 014A84210015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FE905566A90004AB04E = {
+			fileRef = 014A84220015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FEA05566A90004AB04E = {
+			fileRef = 014A84440015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FEB05566A90004AB04E = {
+			fileRef = 014A84450015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FEC05566A90004AB04E = {
+			fileRef = 014A84460015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FED05566A90004AB04E = {
+			fileRef = 014A84500015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FEE05566A90004AB04E = {
+			fileRef = 014A84510015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FEF05566A90004AB04E = {
+			fileRef = 014A84520015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FF005566A90004AB04E = {
+			fileRef = 014A84530015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FF105566A90004AB04E = {
+			fileRef = 014A84540015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FF205566A90004AB04E = {
+			fileRef = 014A84550015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FF305566A90004AB04E = {
+			fileRef = 014A84560015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FF405566A90004AB04E = {
+			fileRef = 014A84570015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Project,
+				);
+			};
+		};
+		AD221FF505566A90004AB04E = {
+			buildActionMask = 2147483647;
+			files = (
+				AD221FF605566A90004AB04E,
+				AD221FF705566A90004AB04E,
+				AD221FF805566A90004AB04E,
+				AD221FF905566A90004AB04E,
+				AD221FFA05566A90004AB04E,
+				AD221FFB05566A90004AB04E,
+				AD221FFC05566A90004AB04E,
+				AD221FFD05566A90004AB04E,
+				AD221FFE05566A90004AB04E,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD221FF605566A90004AB04E = {
+			fileRef = 014A84270015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FF705566A90004AB04E = {
+			fileRef = 014A84290015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FF805566A90004AB04E = {
+			fileRef = 014A842B0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FF905566A90004AB04E = {
+			fileRef = 014A842E0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FFA05566A90004AB04E = {
+			fileRef = 014A84310015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FFB05566A90004AB04E = {
+			fileRef = 014A84330015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FFC05566A90004AB04E = {
+			fileRef = 014A84340015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FFD05566A90004AB04E = {
+			fileRef = 014A84480015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD221FFE05566A90004AB04E = {
+			fileRef = 01C8FAE10065242C7F000001;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD22200005566A90004AB04E = {
+			buildActionMask = 2147483647;
+			files = (
+				AD22200105566A90004AB04E,
+				AD22200205566A90004AB04E,
+				AD22200305566A90004AB04E,
+				AD22200405566A90004AB04E,
+				AD22200505566A90004AB04E,
+				AD22200605566A90004AB04E,
+				AD22200705566A90004AB04E,
+				AD22200805566A90004AB04E,
+				AD22200905566A90004AB04E,
+				AD22200A05566A90004AB04E,
+				AD22200B05566A90004AB04E,
+				AD22200C05566A90004AB04E,
+				AD22200D05566A90004AB04E,
+				AD22200E05566A90004AB04E,
+				AD22200F05566A90004AB04E,
+				AD22201005566A90004AB04E,
+				AD22201105566A90004AB04E,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD22200105566A90004AB04E = {
+			fileRef = 014A84170015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200205566A90004AB04E = {
+			fileRef = 014A84180015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200305566A90004AB04E = {
+			fileRef = 014A84190015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200405566A90004AB04E = {
+			fileRef = 014A841A0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200505566A90004AB04E = {
+			fileRef = 014A841B0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200605566A90004AB04E = {
+			fileRef = 014A84240015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200705566A90004AB04E = {
+			fileRef = 014A84250015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200805566A90004AB04E = {
+			fileRef = 014A84410015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200905566A90004AB04E = {
+			fileRef = 014A84420015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200A05566A90004AB04E = {
+			fileRef = 014A84590015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200B05566A90004AB04E = {
+			fileRef = 014A845A0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200C05566A90004AB04E = {
+			fileRef = 014A845B0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200D05566A90004AB04E = {
+			fileRef = 014A845C0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200E05566A90004AB04E = {
+			fileRef = 014A845D0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22200F05566A90004AB04E = {
+			fileRef = 014A845E0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22201005566A90004AB04E = {
+			fileRef = 014A845F0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22201105566A90004AB04E = {
+			fileRef = 014A84600015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		AD22201205566A90004AB04E = {
+			buildActionMask = 2147483647;
+			files = (
+				AD22201305566A90004AB04E,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD22201305566A90004AB04E = {
+			fileRef = 0149F9C0007407687F000001;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AD22201405566A90004AB04E = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD22201605566A90004AB04E = {
+			expectedFileType = text.plist;
+			isa = PBXFileReference;
+			path = "Info-WordNet.plist";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		AD22201705566A91004AB04E = {
+			expectedFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = WordNet.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 	};
 	rootObject = 014A84140015FFB1C347C60C;
