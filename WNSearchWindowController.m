@@ -3,7 +3,7 @@
 //	This code is part of the WordNet frontend by Erik Doernenburg. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
 //	More information can be found at <http://www.erik.clara.net>.
-//	@(#)$Id: WNSearchWindowController.m,v 1.2 2001-03-14 22:47:17 znek Exp $
+//	@(#)$Id: WNSearchWindowController.m,v 1.3 2001-05-08 18:35:21 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <AppKit/AppKit.h>
@@ -15,6 +15,10 @@
 
 @interface WNSearchWindowController(PrivateAPI)
 - (void)_setOutputText:(NSString *)text;
+- (void)findDirection:(int)direction;
+- (NSRange)findString:(NSString *)string inString:(NSString *)supersetString selectedRange:(NSRange)selectedRange options:(unsigned)options wrap:(BOOL)wrap;
+- (NSString *)pbSearchString;
+- (void)setPbSearchString:(NSString *)aString;
 @end
 
 
@@ -105,7 +109,7 @@
 //	ACTIONS METHODS
 //---------------------------------------------------------------------------------------
 
-- (void)runSearch:(id)sender
+- (IBAction)runSearch:(id)sender
 {
     NSArray				*resultSet;
     NSMutableDictionary	*resultWords;
@@ -182,7 +186,7 @@
 }
 
 
-- (void)getDetails:(id)sender
+- (IBAction)getDetails:(id)sender
 {
     NSString  *details;
 
@@ -243,12 +247,172 @@
 
 
 
-- (void)printResult:(id)sender
+- (IBAction)printResult:(id)sender
 {
     NSColor *bgc = [textView backgroundColor];
     [textView setBackgroundColor:[NSColor whiteColor]];
     [textView print:sender];
     [textView setBackgroundColor:bgc];
+}
+
+- (IBAction)enterSelection:(id)sender
+{
+	NSRange range = [textView selectedRange];
+	if(range.length != 0)
+	{
+		NSString *searchString = [[[textView textStorage] string] substringWithRange:range];
+		[self setPbSearchString:searchString];
+		[findStringField setStringValue:searchString];
+	}
+	else
+	{
+		NSBeep();
+	}
+}
+
+- (void)jumpToSelection: sender
+{
+  [textView scrollRangeToVisible:[textView selectedRange]];
+}
+
+
+//---------------------------------------------------------------------------------------
+//	FIND PANEL
+//---------------------------------------------------------------------------------------
+
+
+- (IBAction)showFindPanel:(id)sender
+{
+	if([self pbSearchString])
+		[findStringField setStringValue:[self pbSearchString]];
+	else
+		[findStringField setStringValue:@""];
+	[findPanel makeKeyAndOrderFront:sender];
+}
+
+- (IBAction)findNext:(id)sender
+{
+	[self setPbSearchString:[findStringField stringValue]];
+	[self findDirection:0];
+}
+
+- (IBAction)findPrevious:(id)sender
+{
+	[self setPbSearchString:[findStringField stringValue]];
+	[self findDirection:NSBackwardsSearch];
+}
+
+
+/*
+	direction is one of
+	0 == forwards
+	NSBackwardsSearch == backwards
+*/
+
+- (void)findDirection:(int)direction
+{
+	NSString *searchString;
+  BOOL found = NO;
+
+  searchString = [self pbSearchString];
+  if(searchString != nil)
+  {
+    NSString *textContents = [[textView textStorage] string];
+    unsigned textLength;
+    if(textContents && (textLength = [textContents length]))
+    {
+      NSRange range;
+      unsigned options = 0;
+      if(direction == NSBackwardsSearch)
+        options |= NSBackwardsSearch;
+      if([ignoreCaseButton state] == NSOnState)
+        options |= NSCaseInsensitiveSearch;
+      range = [self findString:searchString inString:textContents selectedRange:[textView selectedRange] options:options wrap:YES];
+      if(range.length)
+      {
+        [textView setSelectedRange:range];
+        [textView scrollRangeToVisible:range];
+        found = YES;
+      }
+    }
+  }
+
+  if(found == NO)
+    NSBeep();
+}
+
+- (NSRange)findString:(NSString *)string inString:(NSString *)supersetString selectedRange:(NSRange)selectedRange options:(unsigned)options wrap:(BOOL)wrap
+{
+	BOOL forwards = (options & NSBackwardsSearch) == 0;
+	unsigned length = [supersetString length];
+	NSRange searchRange, range;
+	
+	if(forwards)
+	{
+		searchRange.location = NSMaxRange(selectedRange);
+		searchRange.length = length - searchRange.location;
+		range = [supersetString rangeOfString:string options:options range:searchRange];
+		if((range.length == 0) && wrap)
+		{
+			// If not found look at the first part of the string
+			searchRange.location = 0;
+			searchRange.length = selectedRange.location;
+			range = [supersetString rangeOfString:string options:options range:searchRange];
+		}
+	}
+	else
+	{
+		searchRange.location = 0;
+		searchRange.length = selectedRange.location;
+		range = [supersetString rangeOfString:string options:options range:searchRange];
+		if((range.length == 0) && wrap)
+		{
+			searchRange.location = NSMaxRange(selectedRange);
+			searchRange.length = length - searchRange.location;
+			range = [supersetString rangeOfString:string options:options range:searchRange];
+		}
+	}
+	return range;
+}        
+
+- (NSString *)pbSearchString
+{
+  NSPasteboard *pasteboard = [NSPasteboard pasteboardWithName:NSFindPboard];
+  NSString *searchString = nil;
+
+	if([[pasteboard types] containsObject:NSStringPboardType])
+		searchString = [pasteboard stringForType:NSStringPboardType];
+
+  return searchString;
+}
+
+- (void)setPbSearchString:(NSString *)aString
+{
+	NSPasteboard *pasteboard = [NSPasteboard pasteboardWithName:NSFindPboard];
+	
+	[pasteboard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
+	[pasteboard setString:aString forType:NSStringPboardType];
+}
+
+
+//---------------------------------------------------------------------------------------
+//	MENU ITEM VALIDATION
+//---------------------------------------------------------------------------------------
+
+- (BOOL)validateMenuItem:(NSMenuItem *)anItem
+{
+  SEL action = [anItem action];
+  
+  if(action == @selector(findPrevious:))
+    return ([self pbSearchString] != nil) && ([[[textView textStorage] string] length] != 0);
+  if(action == @selector(findNext:))
+    return ([self pbSearchString] != nil) && ([[[textView textStorage] string] length] != 0);
+  if(action == @selector(jumpToSelection:))
+    return [textView selectedRange].length != 0;
+  if(action == @selector(enterSelection:))
+    return [textView selectedRange].length != 0;
+
+  return YES;
 }
 
 
@@ -282,6 +446,20 @@
     [[inputField target] performSelector:[inputField action] withObject:inputField];
 }
 
+
+//---------------------------------------------------------------------------------------
+//	WINDOW DELEGATE METHODS
+//---------------------------------------------------------------------------------------
+
+- (void)windowDidBecomeMain:(NSNotification *)aNotification
+{
+	// Update Findpanel with current NSFindPasteboard's content
+	// (which might have been changed by another app in the meantime)
+	if([self pbSearchString])
+		[findStringField setStringValue:[self pbSearchString]];
+	else
+		[findStringField setStringValue:@""];
+}
 
 
 //=======================================================================================

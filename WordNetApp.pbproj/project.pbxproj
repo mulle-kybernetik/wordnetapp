@@ -526,23 +526,21 @@
 	<key>CFBundleExecutable</key>
 	<string>WordNet</string>
 	<key>CFBundleGetInfoString</key>
-	<string></string>
+	<string>4, For copyright details refer to GNU Public License Version 2 and WordNet License.</string>
 	<key>CFBundleIconFile</key>
 	<string>WordNet.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string></string>
+	<string>com.mulle-kybernetik.wordnet</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string></string>
+	<string>WordNet</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string></string>
+	<string>4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>0.0.1d1</string>
 	<key>NSAppVersion</key>
 	<string>Mac OS X Server Front End</string>
 	<key>NSExtensions</key>
