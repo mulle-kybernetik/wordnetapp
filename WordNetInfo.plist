@@ -1,0 +1,25 @@
+{
+	ApplicationName = "WordNet.app";
+	ApplicationRelease = "WordNet.app 4";
+	ApplicationURL = "http://www.mulle-kybernetik.com/software/WordNet/";
+	ApplicationDescription = "A frontend to the WordNet semantic network.";
+	Authors = ("Erik Doernenburg <erik@x101.net>", "Marcus Mueller <znek@mulle-kybernetik.com>");
+	FullVersionID = "4";
+	Copyright = "For copyright details refer to GNU Public License Version 2 and WordNet License";
+	CopyrightDescription = "For copyright details refer to GNU Public License Version 2 and WordNet License";
+    NSHumanReadableCopyright = "For copyright details refer to GNU Public License Version 2 and WordNet License"; 
+    NSPrincipalClass = EDApplication; 
+    NSServices = (
+        {
+            NSKeyEquivalent = {default = "="; }; 
+            NSMenuItem = {
+                English = "Search in WordNet"; 
+                German = "In WordNet suchen"; 
+                default = "Search in WordNet"; 
+            }; 
+            NSMessage = provideLookupService; 
+            NSPortName = WordNet; 
+            NSSendTypes = (NSStringPboardType); 
+        }
+    ); 
+}

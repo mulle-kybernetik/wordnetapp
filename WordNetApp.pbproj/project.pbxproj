@@ -189,7 +189,6 @@
 		014A84270015FFB1C347C60C = {
 			children = (
 				014A84280015FFB1C347C60C,
-				1E17A202005EA717C347C60C,
 			);
 			isa = PBXVariantGroup;
 			name = Preferences.nib;
@@ -208,7 +207,6 @@
 		014A84290015FFB1C347C60C = {
 			children = (
 				014A842A0015FFB1C347C60C,
-				1E17A203005EA7CDC347C60C,
 			);
 			isa = PBXVariantGroup;
 			name = SearchWindow.nib;
@@ -227,7 +225,6 @@
 		014A842B0015FFB1C347C60C = {
 			children = (
 				014A842C0015FFB1C347C60C,
-				1E17A1FF005EA4A3C347C60C,
 			);
 			isa = PBXVariantGroup;
 			name = WordNet.nib;
@@ -277,6 +274,7 @@
 				01C8FAE10065242C7F000001,
 				014A84310015FFB1C347C60C,
 				014A843D0015FFB1C347C60C,
+				AD9662FD0556A2970053A744,
 				AD22201605566A90004AB04E,
 				014A84330015FFB1C347C60C,
 				014A84340015FFB1C347C60C,
@@ -616,14 +614,6 @@
 //1E2
 //1E3
 //1E4
-		1E17A1FF005EA4A3C347C60C = {
-			expectedFileType = wrapper.nib;
-			isa = PBXFileReference;
-			name = "English - macos";
-			path = "English.lproj/WordNet-macos.nib";
-			refType = 4;
-			sourceTree = "<group>";
-		};
 		1E17A200005EA4A3C347C60C = {
 			buildRules = (
 			);
@@ -649,22 +639,6 @@
 			};
 			isa = PBXBuildStyle;
 			name = Deployment;
-		};
-		1E17A202005EA717C347C60C = {
-			expectedFileType = wrapper.nib;
-			isa = PBXFileReference;
-			name = "English - macos";
-			path = "English.lproj/Preferences-macos.nib";
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		1E17A203005EA7CDC347C60C = {
-			expectedFileType = wrapper.nib;
-			isa = PBXFileReference;
-			name = "English - macos";
-			path = "English.lproj/SearchWindow-macos.nib";
-			refType = 4;
-			sourceTree = "<group>";
 		};
 //1E0
 //1E1
@@ -693,7 +667,7 @@
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-WordNet.plist";
+				INFOPLIST_FILE = "WordNetInfo-MacOSX.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
@@ -1125,7 +1099,7 @@
 		AD22201605566A90004AB04E = {
 			expectedFileType = text.plist;
 			isa = PBXFileReference;
-			path = "Info-WordNet.plist";
+			path = "WordNetInfo-MacOSX.plist";
 			refType = 4;
 			sourceTree = "<group>";
 		};
@@ -1136,6 +1110,13 @@
 			path = WordNet.app;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AD9662FD0556A2970053A744 = {
+			expectedFileType = text.plist;
+			isa = PBXFileReference;
+			path = "Info-WordNet.plist";
+			refType = 4;
+			sourceTree = "<group>";
 		};
 	};
 	rootObject = 014A84140015FFB1C347C60C;

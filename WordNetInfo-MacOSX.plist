@@ -18,10 +18,10 @@
 	<string>WordNet</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>4</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>For copyright details refer to GNU Public License Version 2 and WordNet License</string>
 	<key>NSMainNibFile</key>
