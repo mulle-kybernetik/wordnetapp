@@ -1,0 +1,23 @@
+{
+    NSInfoPlistVersion = "5.0";
+	NSAppVersion = "Mac OS X Server Front End";
+    NSHumanReadableShortName = "WordNet";
+    NSHumanReadableCopyright = "For copyright details refer to GNU Public License Version 2 and WordNet License";
+
+	NSServices = (
+		{
+		NSExecutable = WordNet;
+		NSPortName = WordNet;
+		NSMessage = provideLookupService;
+		NSSendTypes = (NSStringPboardType);
+		NSMenuItem = {
+			default = "Search in WordNet";
+			English = "Search in WordNet";
+			German = "In WordNet suchen";
+			};
+		NSKeyEquivalent = {
+			default = "=";
+			};
+		}
+	);
+}
