@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                getDetails = id; 
+                gotoWordNetHomepage = id; 
+                runSearch = id; 
+                showAboutPanel = id; 
+                showLicense = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                aboutPanel = id; 
+                inputField = id; 
+                licensePanel = id; 
+                licenseView = id; 
+                listView = id; 
+                mainWindow = id; 
+                searchResultField = id; 
+                textView = id; 
+                versionField = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {endSession = id; setDictionaryPath = id; }; 
+            CLASS = WNPrefPanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dpathField = id; restartNoteBox = id; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
