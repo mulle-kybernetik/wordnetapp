@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>WordNet</string>
 	<key>CFBundleGetInfoString</key>
-	<string>WordNet version 4, For copyright details refer to GNU Public License Version 2 and WordNet License.</string>
+	<string>WordNet version 5, For copyright details refer to GNU Public License Version 2 and WordNet License.</string>
 	<key>CFBundleIconFile</key>
 	<string>WordNet</string>
 	<key>CFBundleIdentifier</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>5</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>For copyright details refer to GNU Public License Version 2 and WordNet License</string>
 	<key>NSMainNibFile</key>
