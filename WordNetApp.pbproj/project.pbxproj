@@ -5,6 +5,24 @@
 	};
 	objectVersion = 32;
 	objects = {
+		0149F9C0007407687F000001 = {
+			isa = PBXFrameworkReference;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+		};
+		0149F9C1007407687F000001 = {
+			fileRef = 0149F9C0007407687F000001;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0149F9C20074079A7F000001 = {
+			fileRef = 014A843D0015FFB1C347C60C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
 		014A84140015FFB1C347C60C = {
 			buildStyles = (
 				1E17A200005EA4A3C347C60C,
@@ -20,14 +38,11 @@
 		};
 		014A84150015FFB1C347C60C = {
 			children = (
-				014A84160015FFB1C347C60C,
 				014A841C0015FFB1C347C60C,
+				014A84160015FFB1C347C60C,
 				014A84230015FFB1C347C60C,
-				014A84260015FFB1C347C60C,
-				014A84300015FFB1C347C60C,
-				014A84320015FFB1C347C60C,
-				014A84360015FFB1C347C60C,
 				014A843E0015FFB1C347C60C,
+				014A84320015FFB1C347C60C,
 				014A84650015FFB1C347C60C,
 				014A846A0015FFB1C347C60C,
 			);
@@ -134,17 +149,6 @@
 			path = Constants.m;
 			refType = 4;
 		};
-		014A84260015FFB1C347C60C = {
-			children = (
-				014A84270015FFB1C347C60C,
-				014A84290015FFB1C347C60C,
-				014A842B0015FFB1C347C60C,
-				014A842E0015FFB1C347C60C,
-			);
-			isa = PBXGroup;
-			name = Interfaces;
-			refType = 4;
-		};
 		014A84270015FFB1C347C60C = {
 			children = (
 				014A84280015FFB1C347C60C,
@@ -152,6 +156,7 @@
 			);
 			isa = PBXVariantGroup;
 			name = Preferences.nib;
+			path = "";
 			refType = 4;
 		};
 		014A84280015FFB1C347C60C = {
@@ -167,6 +172,7 @@
 			);
 			isa = PBXVariantGroup;
 			name = SearchWindow.nib;
+			path = "";
 			refType = 4;
 		};
 		014A842A0015FFB1C347C60C = {
@@ -178,11 +184,11 @@
 		014A842B0015FFB1C347C60C = {
 			children = (
 				014A842C0015FFB1C347C60C,
-				014A842D0015FFB1C347C60C,
 				1E17A1FF005EA4A3C347C60C,
 			);
 			isa = PBXVariantGroup;
 			name = WordNet.nib;
+			path = "";
 			refType = 4;
 		};
 		014A842C0015FFB1C347C60C = {
@@ -191,33 +197,19 @@
 			path = English.lproj/WordNet.nib;
 			refType = 4;
 		};
-		014A842D0015FFB1C347C60C = {
-			isa = PBXFileReference;
-			name = "English - windows";
-			path = "English.lproj/WordNet-windows.nib";
-			refType = 4;
-		};
 		014A842E0015FFB1C347C60C = {
 			children = (
 				014A842F0015FFB1C347C60C,
 			);
 			isa = PBXVariantGroup;
 			name = License.nib;
+			path = "";
 			refType = 4;
 		};
 		014A842F0015FFB1C347C60C = {
 			isa = PBXFileReference;
 			name = English;
 			path = English.lproj/License.nib;
-			refType = 4;
-		};
-		014A84300015FFB1C347C60C = {
-			children = (
-				01C8FAE10065242C7F000001,
-				014A84310015FFB1C347C60C,
-			);
-			isa = PBXGroup;
-			name = Images;
 			refType = 4;
 		};
 		014A84310015FFB1C347C60C = {
@@ -227,6 +219,13 @@
 		};
 		014A84320015FFB1C347C60C = {
 			children = (
+				014A84270015FFB1C347C60C,
+				014A84290015FFB1C347C60C,
+				014A842B0015FFB1C347C60C,
+				014A842E0015FFB1C347C60C,
+				01C8FAE10065242C7F000001,
+				014A84310015FFB1C347C60C,
+				014A843D0015FFB1C347C60C,
 				014A84330015FFB1C347C60C,
 				014A84340015FFB1C347C60C,
 			);
@@ -253,50 +252,6 @@
 			path = English.lproj/Credits.rtf;
 			refType = 4;
 		};
-		014A84360015FFB1C347C60C = {
-			children = (
-				014A84370015FFB1C347C60C,
-				014A84380015FFB1C347C60C,
-				014A84390015FFB1C347C60C,
-				014A843A0015FFB1C347C60C,
-				014A843B0015FFB1C347C60C,
-				014A843C0015FFB1C347C60C,
-				014A843D0015FFB1C347C60C,
-			);
-			isa = PBXGroup;
-			name = "Supporting Files";
-			refType = 4;
-		};
-		014A84370015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile.preamble;
-			refType = 4;
-		};
-		014A84380015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile;
-			refType = 4;
-		};
-		014A84390015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile.postamble;
-			refType = 4;
-		};
-		014A843A0015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = m.template;
-			refType = 4;
-		};
-		014A843B0015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = h.template;
-			refType = 4;
-		};
-		014A843C0015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = java.template;
-			refType = 4;
-		};
 		014A843D0015FFB1C347C60C = {
 			isa = PBXFileReference;
 			path = CustomInfo.plist;
@@ -312,10 +267,9 @@
 		};
 		014A843F0015FFB1C347C60C = {
 			children = (
-				014A84400015FFB1C347C60C,
 				014A84430015FFB1C347C60C,
+				014A84400015FFB1C347C60C,
 				014A84470015FFB1C347C60C,
-				014A84490015FFB1C347C60C,
 				014A844D0015FFB1C347C60C,
 			);
 			isa = PBXGroup;
@@ -380,31 +334,6 @@
 			path = SearchTypes.strings;
 			refType = 4;
 		};
-		014A84490015FFB1C347C60C = {
-			children = (
-				014A844A0015FFB1C347C60C,
-				014A844B0015FFB1C347C60C,
-				014A844C0015FFB1C347C60C,
-			);
-			isa = PBXGroup;
-			name = "Supporting Files";
-			refType = 4;
-		};
-		014A844A0015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile.preamble;
-			refType = 4;
-		};
-		014A844B0015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile;
-			refType = 4;
-		};
-		014A844C0015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile.postamble;
-			refType = 4;
-		};
 		014A844D0015FFB1C347C60C = {
 			children = (
 				014A844E0015FFB1C347C60C,
@@ -417,7 +346,6 @@
 			children = (
 				014A844F0015FFB1C347C60C,
 				014A84580015FFB1C347C60C,
-				014A84610015FFB1C347C60C,
 			);
 			isa = PBXGroup;
 			name = wnlib;
@@ -534,51 +462,13 @@
 			path = wnutil.c;
 			refType = 4;
 		};
-		014A84610015FFB1C347C60C = {
-			children = (
-				014A84620015FFB1C347C60C,
-				014A84630015FFB1C347C60C,
-				014A84640015FFB1C347C60C,
-			);
-			isa = PBXGroup;
-			name = "Supporting Files";
-			refType = 4;
-		};
-		014A84620015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile.preamble;
-			refType = 4;
-		};
-		014A84630015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile;
-			refType = 4;
-		};
-		014A84640015FFB1C347C60C = {
-			isa = PBXFileReference;
-			path = Makefile.postamble;
-			refType = 4;
-		};
 		014A84650015FFB1C347C60C = {
 			children = (
-				014A84670015FFB1C347C60C,
-				014A84680015FFB1C347C60C,
+				0149F9C0007407687F000001,
 			);
 			isa = PBXGroup;
-			name = "External Frameworks and Libraries";
+			name = Frameworks;
 			refType = 4;
-		};
-		014A84670015FFB1C347C60C = {
-			isa = PBXFrameworkReference;
-			name = AppKit.framework;
-			path = /System/Library/Frameworks/AppKit.framework;
-			refType = 0;
-		};
-		014A84680015FFB1C347C60C = {
-			isa = PBXFrameworkReference;
-			name = Foundation.framework;
-			path = /System/Library/Frameworks/Foundation.framework;
-			refType = 0;
 		};
 		014A846A0015FFB1C347C60C = {
 			children = (
@@ -602,16 +492,19 @@
 				014A849E0015FFB1C347C60C,
 			);
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 3;
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = "";
 				OPTIMIZATION_CFLAGS = "";
 				OTHER_CFLAGS = "-DUNIX -Dunix";
+				OTHER_GENERATED_OFILES = "$(VERS_OFILE)";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WordNet;
 				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
 				WRAPPER_EXTENSION = app;
 			};
@@ -621,7 +514,7 @@
 			);
 			isa = PBXApplicationTarget;
 			name = "WordNet (Application)";
-			productInstallPath = "$(HOME)/Applications";
+			productInstallPath = "$(LOCAL_APPS_DIR)";
 			productName = WordNet;
 			productReference = 014A846B0015FFB1C347C60C;
 			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
@@ -876,6 +769,7 @@
 				014A84860015FFB1C347C60C,
 				014A84870015FFB1C347C60C,
 				01C8FAE20065242C7F000001,
+				0149F9C20074079A7F000001,
 			);
 			isa = PBXResourcesBuildPhase;
 			name = "Bundle Resources";
@@ -1091,23 +985,10 @@
 		014A849A0015FFB1C347C60C = {
 			buildActionMask = 2147483647;
 			files = (
-				014A849C0015FFB1C347C60C,
-				014A849D0015FFB1C347C60C,
+				0149F9C1007407687F000001,
 			);
 			isa = PBXFrameworksBuildPhase;
 			name = "Frameworks & Libraries";
-		};
-		014A849C0015FFB1C347C60C = {
-			fileRef = 014A84670015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		014A849D0015FFB1C347C60C = {
-			fileRef = 014A84680015FFB1C347C60C;
-			isa = PBXBuildFile;
-			settings = {
-			};
 		};
 		014A849E0015FFB1C347C60C = {
 			buildActionMask = 2147483647;
