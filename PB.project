@@ -53,9 +53,8 @@
     LANGUAGE = English; 
     MAKEFILEDIR = "$(MAKEFILEPATH)/pb_makefiles"; 
     NEXTSTEP_APPICON = WordNet.tiff; 
-    NEXTSTEP_BUILDDIR = "/Local/BuildArea/$(NAME)-$(USER)"; 
-    NEXTSTEP_BUILDTOOL = /bin/gnumake; 
-    NEXTSTEP_COMPILEROPTIONS = "-DUNIX -Dunix"; 
+    NEXTSTEP_BUILDTOOL = /usr/bin/gnumake; 
+    NEXTSTEP_COMPILEROPTIONS = "-DUNIX -Dunix -DWORDNET_OSXSBUILD"; 
     NEXTSTEP_DOCUMENTEXTENSIONS = (); 
     NEXTSTEP_INSTALLDIR = "$(HOME)/Applications"; 
     NEXTSTEP_JAVA_COMPILER = /usr/bin/javac; 

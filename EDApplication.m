@@ -2,7 +2,7 @@
 //	EDApplication.m created by erik on Sun 19-Jul-1998
 //	This code was written by Erik Doernenburg <erik@x101.net>. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
-//	@(#)$Id: EDApplication.m,v 1.1.1.1 2000-10-23 23:57:01 erik Exp $
+//	@(#)$Id: EDApplication.m,v 1.2 2001-03-18 19:24:37 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <AppKit/AppKit.h>
@@ -50,6 +50,7 @@
 
 - (void)openURL:(NSString *)url;
 {
+#ifdef WORDNET_OSXSBUILD
     NSPasteboard 	*pboard;
     NSString 		*sname;
 
@@ -60,6 +61,10 @@
     if((sname = [[NSUserDefaults standardUserDefaults] stringForKey:@"URLService"]) == nil)
         sname = @"OmniWeb/Open URL";
     NSPerformService(sname, pboard);		
+#else
+    if([[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]] == NO)
+        NSBeep();
+#endif
 }
 
 
