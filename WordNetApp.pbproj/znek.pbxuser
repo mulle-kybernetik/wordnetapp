@@ -3,6 +3,9 @@
 	014A84140015FFB1C347C60C = {
 		activeBuildStyle = 1E17A200005EA4A3C347C60C;
 		activeTarget = 014A846C0015FFB1C347C60C;
+		addToTargets = (
+			014A846C0015FFB1C347C60C,
+		);
 		perUserDictionary = {
 			PBXWorkspaceConfiguration = {
 				ContentSize = "{1061, 692}";
