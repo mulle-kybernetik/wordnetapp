@@ -76,7 +76,7 @@
     if(licensePanel == nil)
         {
         if([NSBundle loadNibNamed:@"License" owner:self] == NO)
-            [NSException raise:NSGenericException format:@"-[%@ %@]: Could not load License NIB file.", NSStringFromClass(isa), NSStringFromSelector(_cmd)];
+            [NSException raise:NSGenericException format:@"-[%@ %@]: Could not load License NIB file.", NSStringFromClass([self class]), NSStringFromSelector(_cmd)];
        [licenseView setString:[NSString stringWithFormat:@"Database and Software Library License:\n\n%@", [WNController license]]];
         [licensePanel center];
         }
