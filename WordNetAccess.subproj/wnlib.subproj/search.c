@@ -1402,7 +1402,7 @@ static void add_relatives(int pos, IndexPtr idx, int rel1, int rel2)
     
 static int groupexc(unsigned long off1, unsigned long off2)
 {
-    char buf[8], *p, linebuf[1024];
+    char buf[8 + 1], *p, linebuf[1024];
 
     sprintf(buf, "%8.8lu", (off1 < off2 ? off1 : off2));
 
