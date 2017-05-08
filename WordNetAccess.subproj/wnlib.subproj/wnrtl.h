@@ -15,7 +15,7 @@
 
 /* Global variables and flags */
 
-extern SearchResults wnresults;	/* structure containing results of search */
+// extern SearchResults wnresults;	/* structure containing results of search */
 extern int fnflag;		/* if set, print lex filename after sense */
 extern int dflag;		/* if set, print definitional glosses */
 extern int saflag;		/* if set, print SEE ALSO pointers */
