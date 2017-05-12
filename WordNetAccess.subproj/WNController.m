@@ -3,7 +3,6 @@
 //	This code is part of the WordNet frontend by Erik Doernenburg. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
 //	More information can be found at http://www.mulle-kybernetik.com/software/WordNet/.
-//	@(#)$Id: WNController.m,v 1.2 2003-11-03 12:42:03 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <Foundation/Foundation.h>
@@ -52,13 +51,13 @@ static Class resultClass;
 //	WNLIB FEATURES
 //---------------------------------------------------------------------------------------
 
-+ (void)setupWithDictionaryPath:(NSString *)aPath
++ (void)setupWithDatabasePath:(NSString *)aPath
 {
     NSLog(@"setting up with path \"%@\"", aPath);
     setenv("WNSEARCHDIR", [aPath cString], 1);
     resultClass = [WNResult class];
     if(wninit() != 0)
-        [NSException raise:NSInvalidArgumentException format:@"+[%@ %@]: Cannot initialise the database access library. Make sure that you've set the correct path to your WordNet dictionary installation.", NSStringFromClass(self), NSStringFromSelector(_cmd)];
+        [NSException raise:NSInvalidArgumentException format:@"+[%@ %@]: Cannot initialise the database access library.", NSStringFromClass(self), NSStringFromSelector(_cmd)];
 }
 
 

@@ -3,7 +3,6 @@
 //	This code is part of the WordNet frontend by Erik Doernenburg. For copyright details
 //	see GNU public license version 2 or above. No warranties implied. Use at own risk.
 //	More information can be found at http://www.mulle-kybernetik.com/software/WordNet/.
-//	@(#)$Id: WNSearchWindowController.m,v 1.6 2003-11-04 02:45:31 znek Exp $
 //---------------------------------------------------------------------------------------
 
 #import <AppKit/AppKit.h>
@@ -25,16 +24,6 @@
 //=======================================================================================
     @implementation WNSearchWindowController
 //=======================================================================================
-
-//---------------------------------------------------------------------------------------
-//	CLASS INITIALISATION
-//---------------------------------------------------------------------------------------
-
-+ (void)initialize
-{
-    [WNTextView poseAsClass:[NSTextView class]];
-}
-
 
 //---------------------------------------------------------------------------------------
 //	INIT & DEALLOC
@@ -121,7 +110,7 @@
     NSMutableString		*overviews;
     NSEnumerator		*resultEnum, *itemEnum;
     WNResult			*result;
-    id <NSMenuItem>		item;
+    NSMenuItem          *item;
     int					itemIndex;
 
     word = [[inputField stringValue] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -162,7 +151,7 @@
         itemEnum = [[popUpButton itemArray] objectEnumerator];
         while((item = [itemEnum nextObject]) != nil)
             {
-            if([item tag] < 0)
+                if([item tag] < 0)
                 continue;
             [item setTitle:[NSString stringWithFormat:[titles objectForKey:[NSNumber numberWithInt:[item tag]]], [resultWords objectForKey:[NSNumber numberWithInt:[popUpButton tag]]]]];
             [item setEnabled:NO];

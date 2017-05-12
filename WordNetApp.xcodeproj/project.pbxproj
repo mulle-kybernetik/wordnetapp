@@ -3,15 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD4948D90D65A0DF004D8CFA /* EDApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A841D0015FFB1C347C60C /* EDApplication.h */; };
-		AD4948DA0D65A0DF004D8CFA /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A841E0015FFB1C347C60C /* Constants.h */; };
+		03235A1C1EC660B500826310 /* Database in Resources */ = {isa = PBXBuildFile; fileRef = 03235A1B1EC660B500826310 /* Database */; };
 		AD4948DB0D65A0DF004D8CFA /* WNAppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A841F0015FFB1C347C60C /* WNAppController.h */; };
 		AD4948DC0D65A0DF004D8CFA /* WNSearchWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A84200015FFB1C347C60C /* WNSearchWindowController.h */; };
-		AD4948DD0D65A0DF004D8CFA /* WNPrefPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A84210015FFB1C347C60C /* WNPrefPanelController.h */; };
 		AD4948DE0D65A0DF004D8CFA /* WNTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A84220015FFB1C347C60C /* WNTextView.h */; };
 		AD4948DF0D65A0DF004D8CFA /* WordNetAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A84440015FFB1C347C60C /* WordNetAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AD4948E00D65A0DF004D8CFA /* WNController.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A84450015FFB1C347C60C /* WNController.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -25,18 +23,13 @@
 		AD4948E80D65A0DF004D8CFA /* wnrtl.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A84560015FFB1C347C60C /* wnrtl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AD4948E90D65A0DF004D8CFA /* wntypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A84570015FFB1C347C60C /* wntypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AD4948EF0D65A0DF004D8CFA /* WordNet.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 014A84310015FFB1C347C60C /* WordNet.tiff */; };
-		AD4948F00D65A0DF004D8CFA /* FactoryDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 014A84330015FFB1C347C60C /* FactoryDefaults.plist */; };
 		AD4948F10D65A0DF004D8CFA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 014A84340015FFB1C347C60C /* Credits.rtf */; };
 		AD4948F20D65A0DF004D8CFA /* SearchTypes.strings in Resources */ = {isa = PBXBuildFile; fileRef = 014A84480015FFB1C347C60C /* SearchTypes.strings */; };
 		AD4948F30D65A0DF004D8CFA /* WordNet.icns in Resources */ = {isa = PBXBuildFile; fileRef = 01C8FAE10065242C7F000001 /* WordNet.icns */; };
-		AD4948F40D65A0DF004D8CFA /* CustomInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 014A843D0015FFB1C347C60C /* CustomInfo.plist */; };
-		AD4948F60D65A0DF004D8CFA /* EDApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A84170015FFB1C347C60C /* EDApplication.m */; settings = {ATTRIBUTES = (); }; };
 		AD4948F70D65A0DF004D8CFA /* WNAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A84180015FFB1C347C60C /* WNAppController.m */; settings = {ATTRIBUTES = (); }; };
 		AD4948F80D65A0DF004D8CFA /* WNSearchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A84190015FFB1C347C60C /* WNSearchWindowController.m */; settings = {ATTRIBUTES = (); }; };
-		AD4948F90D65A0DF004D8CFA /* WNPrefPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A841A0015FFB1C347C60C /* WNPrefPanelController.m */; settings = {ATTRIBUTES = (); }; };
 		AD4948FA0D65A0DF004D8CFA /* WNTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A841B0015FFB1C347C60C /* WNTextView.m */; settings = {ATTRIBUTES = (); }; };
 		AD4948FB0D65A0DF004D8CFA /* WordNet_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A84240015FFB1C347C60C /* WordNet_main.m */; settings = {ATTRIBUTES = (); }; };
-		AD4948FC0D65A0DF004D8CFA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A84250015FFB1C347C60C /* Constants.m */; settings = {ATTRIBUTES = (); }; };
 		AD4948FD0D65A0DF004D8CFA /* WNController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A84410015FFB1C347C60C /* WNController.m */; settings = {ATTRIBUTES = (); }; };
 		AD4948FE0D65A0DF004D8CFA /* WNResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A84420015FFB1C347C60C /* WNResult.m */; settings = {ATTRIBUTES = (); }; };
 		AD4948FF0D65A0DF004D8CFA /* binsrch.c in Sources */ = {isa = PBXBuildFile; fileRef = 014A84590015FFB1C347C60C /* binsrch.c */; settings = {ATTRIBUTES = (); }; };
@@ -49,30 +42,21 @@
 		AD4949060D65A0DF004D8CFA /* wnutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 014A84600015FFB1C347C60C /* wnutil.c */; settings = {ATTRIBUTES = (); }; };
 		AD4949080D65A0DF004D8CFA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0149F9C0007407687F000001 /* Cocoa.framework */; };
 		AD4C8BC21EC12B7F00923F83 /* License.nib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C8BBA1EC12B7F00923F83 /* License.nib */; };
-		AD4C8BC31EC12B7F00923F83 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C8BBC1EC12B7F00923F83 /* Preferences.nib */; };
 		AD4C8BC41EC12B7F00923F83 /* SearchWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C8BBE1EC12B7F00923F83 /* SearchWindow.nib */; };
 		AD4C8BC51EC12B7F00923F83 /* WordNet.nib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C8BC01EC12B7F00923F83 /* WordNet.nib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0149F9C0007407687F000001 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		014A84170015FFB1C347C60C /* EDApplication.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = EDApplication.m; sourceTree = "<group>"; };
 		014A84180015FFB1C347C60C /* WNAppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WNAppController.m; sourceTree = "<group>"; };
 		014A84190015FFB1C347C60C /* WNSearchWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WNSearchWindowController.m; sourceTree = "<group>"; };
-		014A841A0015FFB1C347C60C /* WNPrefPanelController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WNPrefPanelController.m; sourceTree = "<group>"; };
 		014A841B0015FFB1C347C60C /* WNTextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WNTextView.m; sourceTree = "<group>"; };
-		014A841D0015FFB1C347C60C /* EDApplication.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EDApplication.h; sourceTree = "<group>"; };
-		014A841E0015FFB1C347C60C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		014A841F0015FFB1C347C60C /* WNAppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WNAppController.h; sourceTree = "<group>"; };
 		014A84200015FFB1C347C60C /* WNSearchWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WNSearchWindowController.h; sourceTree = "<group>"; };
-		014A84210015FFB1C347C60C /* WNPrefPanelController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WNPrefPanelController.h; sourceTree = "<group>"; };
 		014A84220015FFB1C347C60C /* WNTextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WNTextView.h; sourceTree = "<group>"; };
 		014A84240015FFB1C347C60C /* WordNet_main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WordNet_main.m; sourceTree = "<group>"; };
-		014A84250015FFB1C347C60C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		014A84310015FFB1C347C60C /* WordNet.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = WordNet.tiff; sourceTree = "<group>"; };
-		014A84330015FFB1C347C60C /* FactoryDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = FactoryDefaults.plist; sourceTree = "<group>"; };
 		014A84350015FFB1C347C60C /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
-		014A843D0015FFB1C347C60C /* CustomInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = CustomInfo.plist; sourceTree = "<group>"; };
 		014A84410015FFB1C347C60C /* WNController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WNController.m; sourceTree = "<group>"; };
 		014A84420015FFB1C347C60C /* WNResult.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WNResult.m; sourceTree = "<group>"; };
 		014A84440015FFB1C347C60C /* WordNetAccess.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WordNetAccess.h; sourceTree = "<group>"; };
@@ -96,10 +80,10 @@
 		014A845F0015FFB1C347C60C /* wnrtl.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = wnrtl.c; sourceTree = "<group>"; };
 		014A84600015FFB1C347C60C /* wnutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = wnutil.c; sourceTree = "<group>"; };
 		01C8FAE10065242C7F000001 /* WordNet.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WordNet.icns; sourceTree = "<group>"; };
-		AD49490E0D65A0DF004D8CFA /* Info-WordNet__Application___Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-WordNet__Application___Upgraded_.plist"; sourceTree = "<group>"; };
+		03235A1B1EC660B500826310 /* Database */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Database; sourceTree = "<group>"; };
+		03235A1D1EC66A1800826310 /* WordNetInfo-macos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WordNetInfo-macos.plist"; sourceTree = "<group>"; };
 		AD49490F0D65A0E0004D8CFA /* WordNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4C8BBB1EC12B7F00923F83 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/License.nib; sourceTree = "<group>"; };
-		AD4C8BBD1EC12B7F00923F83 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
 		AD4C8BBF1EC12B7F00923F83 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SearchWindow.nib; sourceTree = "<group>"; };
 		AD4C8BC11EC12B7F00923F83 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/WordNet.nib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +110,6 @@
 				014A84320015FFB1C347C60C /* Resources */,
 				014A84650015FFB1C347C60C /* Frameworks */,
 				014A846A0015FFB1C347C60C /* Products */,
-				AD49490E0D65A0DF004D8CFA /* Info-WordNet__Application___Upgraded_.plist */,
 			);
 			name = WordNet;
 			sourceTree = "<group>";
@@ -134,10 +117,8 @@
 		014A84160015FFB1C347C60C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				014A84170015FFB1C347C60C /* EDApplication.m */,
 				014A84180015FFB1C347C60C /* WNAppController.m */,
 				014A84190015FFB1C347C60C /* WNSearchWindowController.m */,
-				014A841A0015FFB1C347C60C /* WNPrefPanelController.m */,
 				014A841B0015FFB1C347C60C /* WNTextView.m */,
 			);
 			name = Classes;
@@ -146,11 +127,8 @@
 		014A841C0015FFB1C347C60C /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				014A841D0015FFB1C347C60C /* EDApplication.h */,
-				014A841E0015FFB1C347C60C /* Constants.h */,
 				014A841F0015FFB1C347C60C /* WNAppController.h */,
 				014A84200015FFB1C347C60C /* WNSearchWindowController.h */,
-				014A84210015FFB1C347C60C /* WNPrefPanelController.h */,
 				014A84220015FFB1C347C60C /* WNTextView.h */,
 			);
 			name = Headers;
@@ -160,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				014A84240015FFB1C347C60C /* WordNet_main.m */,
-				014A84250015FFB1C347C60C /* Constants.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -168,14 +145,13 @@
 		014A84320015FFB1C347C60C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03235A1B1EC660B500826310 /* Database */,
 				AD4C8BBA1EC12B7F00923F83 /* License.nib */,
-				AD4C8BBC1EC12B7F00923F83 /* Preferences.nib */,
 				AD4C8BBE1EC12B7F00923F83 /* SearchWindow.nib */,
 				AD4C8BC01EC12B7F00923F83 /* WordNet.nib */,
+				03235A1D1EC66A1800826310 /* WordNetInfo-macos.plist */,
 				01C8FAE10065242C7F000001 /* WordNet.icns */,
 				014A84310015FFB1C347C60C /* WordNet.tiff */,
-				014A843D0015FFB1C347C60C /* CustomInfo.plist */,
-				014A84330015FFB1C347C60C /* FactoryDefaults.plist */,
 				014A84340015FFB1C347C60C /* Credits.rtf */,
 			);
 			name = Resources;
@@ -299,11 +275,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4948D90D65A0DF004D8CFA /* EDApplication.h in Headers */,
-				AD4948DA0D65A0DF004D8CFA /* Constants.h in Headers */,
 				AD4948DB0D65A0DF004D8CFA /* WNAppController.h in Headers */,
 				AD4948DC0D65A0DF004D8CFA /* WNSearchWindowController.h in Headers */,
-				AD4948DD0D65A0DF004D8CFA /* WNPrefPanelController.h in Headers */,
 				AD4948DE0D65A0DF004D8CFA /* WNTextView.h in Headers */,
 				AD4948DF0D65A0DF004D8CFA /* WordNetAccess.h in Headers */,
 				AD4948E00D65A0DF004D8CFA /* WNController.h in Headers */,
@@ -348,9 +321,10 @@
 		014A84140015FFB1C347C60C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0830;
 			};
 			buildConfigurationList = AD4948D00D65A0CB004D8CFA /* Build configuration list for PBXProject "WordNetApp" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -372,16 +346,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4C8BC31EC12B7F00923F83 /* Preferences.nib in Resources */,
 				AD4C8BC41EC12B7F00923F83 /* SearchWindow.nib in Resources */,
-				AD4948EF0D65A0DF004D8CFA /* WordNet.tiff in Resources */,
 				AD4C8BC51EC12B7F00923F83 /* WordNet.nib in Resources */,
 				AD4C8BC21EC12B7F00923F83 /* License.nib in Resources */,
-				AD4948F00D65A0DF004D8CFA /* FactoryDefaults.plist in Resources */,
+				AD4948EF0D65A0DF004D8CFA /* WordNet.tiff in Resources */,
+				03235A1C1EC660B500826310 /* Database in Resources */,
 				AD4948F10D65A0DF004D8CFA /* Credits.rtf in Resources */,
 				AD4948F20D65A0DF004D8CFA /* SearchTypes.strings in Resources */,
 				AD4948F30D65A0DF004D8CFA /* WordNet.icns in Resources */,
-				AD4948F40D65A0DF004D8CFA /* CustomInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,13 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4948F60D65A0DF004D8CFA /* EDApplication.m in Sources */,
 				AD4948F70D65A0DF004D8CFA /* WNAppController.m in Sources */,
 				AD4948F80D65A0DF004D8CFA /* WNSearchWindowController.m in Sources */,
-				AD4948F90D65A0DF004D8CFA /* WNPrefPanelController.m in Sources */,
 				AD4948FA0D65A0DF004D8CFA /* WNTextView.m in Sources */,
 				AD4948FB0D65A0DF004D8CFA /* WordNet_main.m in Sources */,
-				AD4948FC0D65A0DF004D8CFA /* Constants.m in Sources */,
 				AD4948FD0D65A0DF004D8CFA /* WNController.m in Sources */,
 				AD4948FE0D65A0DF004D8CFA /* WNResult.m in Sources */,
 				AD4948FF0D65A0DF004D8CFA /* binsrch.c in Sources */,
@@ -441,14 +410,6 @@
 			name = License.nib;
 			sourceTree = "<group>";
 		};
-		AD4C8BBC1EC12B7F00923F83 /* Preferences.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD4C8BBD1EC12B7F00923F83 /* English */,
-			);
-			name = Preferences.nib;
-			sourceTree = "<group>";
-		};
 		AD4C8BBE1EC12B7F00923F83 /* SearchWindow.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -471,29 +432,85 @@
 		AD4948CA0D65A0CB004D8CFA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Development;
 		};
 		AD4948CB0D65A0CB004D8CFA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Deployment;
 		};
 		AD4948CC0D65A0CB004D8CFA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Default;
 		};
 		AD49490B0D65A0DF004D8CFA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 4;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_DYNAMIC_NO_PIC = NO;
+				CURRENT_PROJECT_VERSION = 6;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -501,17 +518,12 @@
 					UNIX,
 					unix,
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-WordNet__Application___Upgraded_.plist";
+				INFOPLIST_FILE = "WordNetInfo-macos.plist";
 				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
-				OTHER_GENERATED_OFILES = "$(VERS_OFILE)";
 				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mulle-kybernetik.wordnet";
 				PRODUCT_NAME = WordNet;
-				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (
@@ -520,33 +532,25 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
 			};
 			name = Development;
 		};
 		AD49490C0D65A0DF004D8CFA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 4;
-				FRAMEWORK_SEARCH_PATHS = "";
+				CURRENT_PROJECT_VERSION = 6;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					UNIX,
 					unix,
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-WordNet__Application___Upgraded_.plist";
+				INFOPLIST_FILE = "WordNetInfo-macos.plist";
 				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
-				OTHER_GENERATED_OFILES = "$(VERS_OFILE)";
 				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mulle-kybernetik.wordnet";
 				PRODUCT_NAME = WordNet;
-				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (
@@ -555,31 +559,23 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
 			};
 			name = Deployment;
 		};
 		AD49490D0D65A0DF004D8CFA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CURRENT_PROJECT_VERSION = 4;
-				FRAMEWORK_SEARCH_PATHS = "";
+				CURRENT_PROJECT_VERSION = 6;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					UNIX,
 					unix,
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-WordNet__Application___Upgraded_.plist";
+				INFOPLIST_FILE = "WordNetInfo-macos.plist";
 				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
-				OTHER_GENERATED_OFILES = "$(VERS_OFILE)";
 				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mulle-kybernetik.wordnet";
 				PRODUCT_NAME = WordNet;
-				SDKROOT = macosx10.6;
 				SECTORDER_FLAGS = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (

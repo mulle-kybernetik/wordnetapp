@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WNSearchWindowController">
+            <connections>
+                <outlet property="adjPopUp" destination="195" id="220"/>
+                <outlet property="advPopUp" destination="199" id="221"/>
+                <outlet property="findPanel" destination="151" id="222"/>
+                <outlet property="findStringField" destination="153" id="225"/>
+                <outlet property="ignoreCaseButton" destination="164" id="224"/>
+                <outlet property="inputField" destination="230" id="232"/>
+                <outlet property="nounPopUp" destination="207" id="218"/>
+                <outlet property="textView" destination="62" id="66"/>
+                <outlet property="verbPopUp" destination="188" id="219"/>
+                <outlet property="window" destination="5" id="81"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="WordNet: Search" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="5" userLabel="Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="512" y="400" width="496" height="456"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="6">
+                <rect key="frame" x="0.0" y="0.0" width="496" height="456"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="61">
+                        <rect key="frame" x="-1" y="0.0" width="498" height="382"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="3l3-Rm-fMk">
+                            <rect key="frame" x="1" y="1" width="481" height="380"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView editable="NO" importsGraphics="NO" usesFontPanel="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="62" customClass="WNTextView">
+                                    <rect key="frame" x="0.0" y="4" width="480" height="380"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.96078432000000002" green="0.96078432000000002" blue="0.96078432000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <size key="minSize" width="480" height="380"/>
+                                    <size key="maxSize" width="584" height="10000000"/>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078432000000002" green="0.96078432000000002" blue="0.96078432000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="251">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="252">
+                            <rect key="frame" x="482" y="1" width="15" height="380"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <popUpButton verticalHuggingPriority="750" tag="2" id="188">
+                        <rect key="frame" x="129" y="390" width="118" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="push" title="Verb" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" borderStyle="borderAndBezel" tag="-1" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="212" id="242">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="200">
+                                <items>
+                                    <menuItem title="Verb" tag="-1" hidden="YES" id="212"/>
+                                    <menuItem title="Synonyms of %@" tag="24" id="196"/>
+                                    <menuItem title="Antonyms of %@" tag="1" id="204"/>
+                                    <menuItem title="To %@ is one way to …" tag="2" id="180"/>
+                                    <menuItem title="Particular ways to %@" tag="3" id="177"/>
+                                    <menuItem title="What does %@ entail doing?" tag="4" id="190"/>
+                                    <menuItem title="What does %@ cause?" tag="14" id="201"/>
+                                    <menuItem title="Sentence frames for verb %@" tag="22" id="191"/>
+                                    <menuItem isSeparatorItem="YES" tag="-2" id="175">
+                                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                    </menuItem>
+                                    <menuItem title="Familiarity of %@" tag="21" id="173"/>
+                                    <menuItem title="see also" tag="16" id="185"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="getDetails:" target="-2" id="215"/>
+                        </connections>
+                    </popUpButton>
+                    <popUpButton verticalHuggingPriority="750" tag="3" id="195">
+                        <rect key="frame" x="249" y="390" width="118" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="push" title="Adjective" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" borderStyle="borderAndBezel" tag="-1" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="168" id="243">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="208">
+                                <items>
+                                    <menuItem title="Adjective" tag="-1" hidden="YES" id="168"/>
+                                    <menuItem title="Synonyms of %@" tag="5" id="183"/>
+                                    <menuItem title="Antonyms of %@" tag="1" id="198"/>
+                                    <menuItem title="%@ pertains to …" tag="17" id="211"/>
+                                    <menuItem title="%@ is a value of …" tag="18" id="209"/>
+                                    <menuItem isSeparatorItem="YES" tag="-2" id="186">
+                                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                    </menuItem>
+                                    <menuItem title="Familiarity of %@" tag="21" id="172"/>
+                                    <menuItem title="see also" tag="16" id="205"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="getDetails:" target="-2" id="216"/>
+                        </connections>
+                    </popUpButton>
+                    <popUpButton verticalHuggingPriority="750" tag="4" id="199">
+                        <rect key="frame" x="369" y="390" width="118" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="push" title="Adverb" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" borderStyle="borderAndBezel" tag="-1" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="193" id="244">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="184">
+                                <items>
+                                    <menuItem title="Adverb" tag="-1" hidden="YES" id="193"/>
+                                    <menuItem title="Synonyms of %@" tag="5" id="174"/>
+                                    <menuItem title="Antonyms of %@" tag="1" id="192"/>
+                                    <menuItem isSeparatorItem="YES" tag="-2" id="210">
+                                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                    </menuItem>
+                                    <menuItem title="Familiarity of %@" tag="21" id="170"/>
+                                    <menuItem title="see also" tag="16" id="203"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="getDetails:" target="-2" id="217"/>
+                        </connections>
+                    </popUpButton>
+                    <popUpButton verticalHuggingPriority="750" tag="1" id="207">
+                        <rect key="frame" x="9" y="390" width="118" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="push" title="Noun" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" borderStyle="borderAndBezel" tag="-1" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="202" id="245">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="189">
+                                <items>
+                                    <menuItem title="Noun" tag="-1" hidden="YES" id="202"/>
+                                    <menuItem title="Synonyms of %@ (ordered)" tag="5" id="179"/>
+                                    <menuItem title="Synonyms of %@ (grouped)" tag="24" id="194"/>
+                                    <menuItem title=" Antonyms of %@" tag="1" id="206"/>
+                                    <menuItem title="Coordinate terms of %@" tag="23" id="165"/>
+                                    <menuItem title="%@ is a kind of … *" tag="2" id="167"/>
+                                    <menuItem title="… is a kind of %@ (brief)" tag="3" id="187"/>
+                                    <menuItem title="… is a kind of %@ (full) *" tag="-3" id="166"/>
+                                    <menuItem title="%@ is a part of … " tag="13" id="176"/>
+                                    <menuItem title="%@ is a part of … (inherited)" tag="26" id="169">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Parts of %@" tag="12" id="197">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Parts of %@ (inherited)" tag="25" id="182">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem isSeparatorItem="YES" tag="-2" id="181">
+                                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                    </menuItem>
+                                    <menuItem title="… is a value of %@" tag="18" id="178"/>
+                                    <menuItem title="Familiarity of %@" tag="21" id="213"/>
+                                    <menuItem title="see also" tag="16" id="171"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="getDetails:" target="-2" id="214"/>
+                        </connections>
+                    </popUpButton>
+                    <searchField wantsLayer="YES" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" id="230">
+                        <rect key="frame" x="12" y="422" width="472" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" bezelStyle="round" sendsWholeSearchString="YES" id="246">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </searchFieldCell>
+                        <connections>
+                            <action selector="runSearch:" target="-2" id="bE4-st-gj8"/>
+                            <outlet property="searchMenuTemplate" destination="233" id="236"/>
+                        </connections>
+                    </searchField>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="29"/>
+            </connections>
+        </window>
+        <window title="WordNet: Find" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="151" userLabel="FindPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="408" y="358" width="344" height="103"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="152">
+                <rect key="frame" x="1" y="9" width="344" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="153">
+                        <rect key="frame" x="61" y="64" width="263" height="22"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="247">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="performClick:" target="162" id="229"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="154">
+                        <rect key="frame" x="17" y="66" width="39" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="248">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Find:
+</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <matrix verticalHuggingPriority="750" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" id="161">
+                        <rect key="frame" x="144" y="16" width="186" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <size key="cellSize" width="93" height="32"/>
+                        <size key="intercellSpacing" width="0.0" height="-2"/>
+                        <buttonCell key="prototype" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" tag="-1" inset="2" id="250">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <cells>
+                            <column>
+                                <buttonCell type="push" title="Previous" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="163">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="findPrevious:" target="-2" id="227"/>
+                                    </connections>
+                                </buttonCell>
+                            </column>
+                            <column>
+                                <buttonCell type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" tag="1" inset="2" id="162">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="findNext:" target="-2" id="228"/>
+                                    </connections>
+                                </buttonCell>
+                            </column>
+                        </cells>
+                    </matrix>
+                    <button imageHugsTitle="YES" id="164">
+                        <rect key="frame" x="18" y="25" width="95" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="check" title="Ignore case" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="249">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="226"/>
+            </connections>
+        </window>
+        <menu title="Menu" id="233" userLabel="SearchMenuTemplate">
+            <items>
+                <menuItem title="Recent Searches" tag="1000" id="235"/>
+                <menuItem title="No Recent Searches" tag="1003" id="238"/>
+                <menuItem title="NSSearchFieldRecentsMenuItem" tag="1001" id="237"/>
+                <menuItem isSeparatorItem="YES" tag="1002" id="239">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Clear" tag="1002" id="234"/>
+            </items>
+        </menu>
+    </objects>
+</document>
